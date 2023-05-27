@@ -1,0 +1,17 @@
+<%= form_with(model: noun) do |form| %>
+  <% if noun.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(noun.errors.count, "error") %> prohibited this noun from being saved:</h2>
+
+      <ul>
+        <% noun.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @preposition %>
+
+<div>
+  <%= link_to "Edit this preposition", edit_preposition_path(@preposition) %> |
+  <%= link_to "Back to prepositions", prepositions_path %>
+
+  <%= button_to "Destroy this preposition", @preposition, method: :delete %>
+</div>

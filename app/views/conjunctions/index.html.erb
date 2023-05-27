@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Conjunctions</h1>
+
+<div id="conjunctions">
+  <% @conjunctions.each do |conjunction| %>
+    <%= render conjunction %>
+    <p>
+      <%= link_to "Show this conjunction", conjunction %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New conjunction", new_conjunction_path %>

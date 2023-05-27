@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  verb_tense: one
+  verb: one
+
+two:
+  verb_tense: two
+  verb: two

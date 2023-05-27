@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @article_gender %>
+
+<div>
+  <%= link_to "Edit this article gender", edit_article_gender_path(@article_gender) %> |
+  <%= link_to "Back to article genders", article_genders_path %>
+
+  <%= button_to "Destroy this article gender", @article_gender, method: :delete %>
+</div>

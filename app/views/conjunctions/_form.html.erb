@@ -1,0 +1,17 @@
+<%= form_with(model: conjunction) do |form| %>
+  <% if conjunction.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(conjunction.errors.count, "error") %> prohibited this conjunction from being saved:</h2>
+
+      <ul>
+        <% conjunction.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

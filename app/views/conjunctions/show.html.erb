@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @conjunction %>
+
+<div>
+  <%= link_to "Edit this conjunction", edit_conjunction_path(@conjunction) %> |
+  <%= link_to "Back to conjunctions", conjunctions_path %>
+
+  <%= button_to "Destroy this conjunction", @conjunction, method: :delete %>
+</div>

@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Nouns</h1>
+
+<div id="nouns">
+  <% @nouns.each do |noun| %>
+    <%= render noun %>
+    <p>
+      <%= link_to "Show this noun", noun %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New noun", new_noun_path %>

@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @adverb %>
+
+<div>
+  <%= link_to "Edit this adverb", edit_adverb_path(@adverb) %> |
+  <%= link_to "Back to adverbs", adverbs_path %>
+
+  <%= button_to "Destroy this adverb", @adverb, method: :delete %>
+</div>

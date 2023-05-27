@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Verb conjugations</h1>
+
+<div id="verb_conjugations">
+  <% @verb_conjugations.each do |verb_conjugation| %>
+    <%= render verb_conjugation %>
+    <p>
+      <%= link_to "Show this verb conjugation", verb_conjugation %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New verb conjugation", new_verb_conjugation_path %>

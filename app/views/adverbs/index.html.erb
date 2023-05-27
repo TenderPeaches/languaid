@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Adverbs</h1>
+
+<div id="adverbs">
+  <% @adverbs.each do |adverb| %>
+    <%= render adverb %>
+    <p>
+      <%= link_to "Show this adverb", adverb %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New adverb", new_adverb_path %>

@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @adjective %>
+
+<div>
+  <%= link_to "Edit this adjective", edit_adjective_path(@adjective) %> |
+  <%= link_to "Back to adjectives", adjectives_path %>
+
+  <%= button_to "Destroy this adjective", @adjective, method: :delete %>
+</div>

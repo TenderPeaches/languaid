@@ -1,0 +1,32 @@
+<%= form_with(model: word_usage) do |form| %>
+  <% if word_usage.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(word_usage.errors.count, "error") %> prohibited this word_usage from being saved:</h2>
+
+      <ul>
+        <% word_usage.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :region_id, style: "display: block" %>
+    <%= form.text_field :region_id %>
+  </div>
+
+  <div>
+    <%= form.label :word_id, style: "display: block" %>
+    <%= form.text_field :word_id %>
+  </div>
+
+  <div>
+    <%= form.label :notes, style: "display: block" %>
+    <%= form.text_field :notes %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

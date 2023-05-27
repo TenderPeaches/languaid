@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Prepositions</h1>
+
+<div id="prepositions">
+  <% @prepositions.each do |preposition| %>
+    <%= render preposition %>
+    <p>
+      <%= link_to "Show this preposition", preposition %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New preposition", new_preposition_path %>

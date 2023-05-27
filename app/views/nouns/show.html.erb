@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @noun %>
+
+<div>
+  <%= link_to "Edit this noun", edit_noun_path(@noun) %> |
+  <%= link_to "Back to nouns", nouns_path %>
+
+  <%= button_to "Destroy this noun", @noun, method: :delete %>
+</div>

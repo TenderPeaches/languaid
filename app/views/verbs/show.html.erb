@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @verb %>
+
+<div>
+  <%= link_to "Edit this verb", edit_verb_path(@verb) %> |
+  <%= link_to "Back to verbs", verbs_path %>
+
+  <%= button_to "Destroy this verb", @verb, method: :delete %>
+</div>

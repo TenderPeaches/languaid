@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @verb_conjugation %>
+
+<div>
+  <%= link_to "Edit this verb conjugation", edit_verb_conjugation_path(@verb_conjugation) %> |
+  <%= link_to "Back to verb conjugations", verb_conjugations_path %>
+
+  <%= button_to "Destroy this verb conjugation", @verb_conjugation, method: :delete %>
+</div>

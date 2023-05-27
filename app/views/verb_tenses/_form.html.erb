@@ -1,0 +1,27 @@
+<%= form_with(model: verb_tense) do |form| %>
+  <% if verb_tense.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(verb_tense.errors.count, "error") %> prohibited this verb_tense from being saved:</h2>
+
+      <ul>
+        <% verb_tense.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :tense_id, style: "display: block" %>
+    <%= form.text_field :tense_id %>
+  </div>
+
+  <div>
+    <%= form.label :verb_mood_id, style: "display: block" %>
+    <%= form.text_field :verb_mood_id %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

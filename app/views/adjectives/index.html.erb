@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Adjectives</h1>
+
+<div id="adjectives">
+  <% @adjectives.each do |adjective| %>
+    <%= render adjective %>
+    <p>
+      <%= link_to "Show this adjective", adjective %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New adjective", new_adjective_path %>

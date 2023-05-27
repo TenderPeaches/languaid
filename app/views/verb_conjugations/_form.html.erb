@@ -1,0 +1,27 @@
+<%= form_with(model: verb_conjugation) do |form| %>
+  <% if verb_conjugation.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(verb_conjugation.errors.count, "error") %> prohibited this verb_conjugation from being saved:</h2>
+
+      <ul>
+        <% verb_conjugation.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :verb_tense_id, style: "display: block" %>
+    <%= form.text_field :verb_tense_id %>
+  </div>
+
+  <div>
+    <%= form.label :verb_id, style: "display: block" %>
+    <%= form.text_field :verb_id %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
