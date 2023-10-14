@@ -151,6 +151,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_26_013142) do
   end
 
   create_table "words", force: :cascade do |t|
+    t.string "wordable_type"
+    t.integer "wordable_id"
     t.integer "word_definition_id", null: false
     t.integer "language_id", null: false
     t.string "loc"
@@ -158,6 +160,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_26_013142) do
     t.datetime "updated_at", null: false
     t.index ["language_id"], name: "index_words_on_language_id"
     t.index ["word_definition_id"], name: "index_words_on_word_definition_id"
+    t.index ["wordable_type", "wordable_id"], name: "index_words_on_wordable"
   end
 
   add_foreign_key "article_genders", "articles"

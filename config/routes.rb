@@ -1,28 +1,8 @@
 Rails.application.routes.draw do
-  resources :verb_conjugations
-  resources :verb_tenses
-  resources :verb_moods
-  resources :article_genders
-  resources :word_usages
-  resources :word_tags
-  resources :adjectives
-  resources :expressions
-  resources :conjunctions
-  resources :prepositions
-  resources :pronouns
-  resources :adverbs
-  resources :verbs
-  resources :nouns
-  resources :articles
-  resources :words
-  resources :word_definitions
-  resources :tenses
-  resources :rules
-  resources :regions
-  resources :languages
-  resources :genders
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  resources :verb_conjugations, :verb_tenses, :verb_moods, :article_genders, :word_usages, :word_tags, :adjectives, :expressions, :conjunctions, :prepositions, :pronouns, :adverbs, :verbs, :nouns, :articles, :words, :word_definitions, :tenses, :rules, :regions, :languages, :genders
+  
+  root "application#index"                                        # main menu/landing page
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  get "/add_words", to: "words#add_words", as: :add_words_menu    # menu to direct the process by which users add words
+  get "/dictionary", to: "words#dictionary", as: :dictionary      # consult the words in the dictionary
 end

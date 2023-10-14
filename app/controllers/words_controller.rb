@@ -6,6 +6,15 @@ class WordsController < ApplicationController
     @words = Word.all
   end
 
+  # GET /add_words
+  def add_words
+  
+  end
+
+  # GET /dictionary
+  def dictionary 
+  end
+
   # GET /words/1 or /words/1.json
   def show
   end

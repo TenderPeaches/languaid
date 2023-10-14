@@ -1,0 +1,7 @@
+gender__neutral = Gender.create(name: "Neutral", shorthand: "n")
+gender__male = Gender.create(name: "Male", shorthand: "m")
+gender__female = Gender.create(name: "Female", shorthand: "f")
+gender__object = Gender.create(name: "Object", shorthand: "o")
+gender__plural = Gender.create(name: "Plural", shorthand: "p")
+gender__mixed = Gender.create(name: "Mixed", shorthand: "all")
+gender__unknown = Gender.create(name: "Unknown", shorthand: "un")
