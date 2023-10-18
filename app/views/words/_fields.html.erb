@@ -1,0 +1,18 @@
+<% # params: form, wordable_type %>
+  
+<% # word definition %>
+<%= content_tag :div, class: "form-field" do %>
+    <%= form.label :word_definition %>
+    <%= form.text_field :word_definition %>
+<% end %>
+
+<%= form.label "Le mot/expression" %>
+<% # each language gets its own loc %>
+<% Language.active.each do |lang| %>
+    <% # loc textfield %>
+    <%= content_tag :div, class: "form-field" do %>
+        <% # display language as label %>
+        <%= form.label lang.shorthand, lang.name %> 
+        <%= form.text_field(:loc, name: wordable_type + "[" + lang.shorthand + "]" + "[loc]", id: wordable_type + "_" + lang.shorthand + "_loc") %> 
+    <% end %>
+<% end %>

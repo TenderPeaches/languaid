@@ -1,15 +1,5 @@
 <%= form_with(model: article_gender) do |form| %>
-  <% if article_gender.errors.any? %>
-    <div style="color: red">
-      <h2><%= pluralize(article_gender.errors.count, "error") %> prohibited this article_gender from being saved:</h2>
-
-      <ul>
-        <% article_gender.errors.each do |error| %>
-          <li><%= error.full_message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
+  <%= render "common/form_errors", model: article_gender %>
 
   <div>
     <%= form.label :article_id, style: "display: block" %>

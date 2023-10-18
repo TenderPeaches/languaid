@@ -11,13 +11,18 @@
 }
 
 /* fields used within a typical form */
-.form-fields {
+.form-field {
     display: grid;                          /* to allow for a uniform display between each field */
     margin: var(--size-l);                  /* breathing room around */
-    padding: var(--size-l);                 /* breathing room within */
     grid-template-columns: 1fr 3fr;         /* 1 frame for the label, 3 frames for the field itself */
-    row-gap: var(--size-s);                 /* additional breathing room between each field */
-  }
+    column-gap: var(--size-m);              /* spacing out the label from the value */
+}
+
+/* form field label, indicating the data represented by the field's value */
+.form-field label {
+    text-align: right;                      /* tug to the right, against the field's value/input, so as to minimize ocular effort required to link label <> value */
+    color: var(--color-secondary-white);    /* data is assumed to be important, so highlight label with a different color */
+}
 
 /* a simple form that lets users input an action mainly through the use of buttons */
 .menu {

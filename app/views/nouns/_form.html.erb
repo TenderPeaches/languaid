@@ -1,16 +1,18 @@
-<%= form_with(model: noun) do |form| %>
-  <% if noun.errors.any? %>
-    <div style="color: red">
-      <h2><%= pluralize(noun.errors.count, "error") %> prohibited this noun from being saved:</h2>
+<% # form_with(model: @noun) do |form| %>
+<% # form_tag nouns_path, method: :post %>
+<%= form_for :noun, { url: nouns_path } do |form| %>
+  <% # render "common/form_errors", model: @noun %>
 
-      <ul>
-        <% noun.errors.each do |error| %>
-          <li><%= error.full_message %></li>
-        <% end %>
-      </ul>
-    </div>
+    <%= render "words/fields", form: form, wordable_type: "noun" %>
+
+  <% # even though it might make sense to define the gender alongside the locs, we are keeping the word-data and noun-data separate for now, for simlpicity's sake; the drawback is that the language loop must be defined twice: here and in words/fields %>
+  <%= form.label "Genre", class: "form-subheader" %>
+  <% Language.with_gendered_nouns.each do |lang| %>
+    <%= content_tag :div, class: "form-field" do %>
+      <%= form.label lang.shorthand, lang.name %>
+      <%= form.collection_select :gender_id, lang.noun_genders, :id, :name, {}, {name: form.object_name.to_s + "[" + lang.shorthand + "]" + "[gender_id]", id: form.object_name.to_s + "_" + lang.shorthand + "_gender_id"} %>
+    <% end %>
   <% end %>
-
   <div>
     <%= form.submit %>
   </div>

@@ -1,15 +1,5 @@
 <%= form_with(model: verb) do |form| %>
-  <% if verb.errors.any? %>
-    <div style="color: red">
-      <h2><%= pluralize(verb.errors.count, "error") %> prohibited this verb from being saved:</h2>
-
-      <ul>
-        <% verb.errors.each do |error| %>
-          <li><%= error.full_message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
+  <%= render "common/form_errors", model: verb %>
 
   <div>
     <%= form.submit %>

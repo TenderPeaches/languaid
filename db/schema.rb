@@ -56,11 +56,13 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_26_013142) do
     t.string "name"
     t.string "shorthand"
     t.boolean "active"
+    t.boolean "has_gendered_nouns", default: false, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "nouns", force: :cascade do |t|
+    t.integer "gender_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -165,6 +167,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_26_013142) do
 
   add_foreign_key "article_genders", "articles"
   add_foreign_key "article_genders", "genders"
+  add_foreign_key "nouns", "genders"
   add_foreign_key "rules", "languages"
   add_foreign_key "verb_conjugations", "verb_tenses"
   add_foreign_key "verb_conjugations", "verbs"

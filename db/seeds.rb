@@ -9,19 +9,3 @@ Dir[Rails.root.join('db/seeds/words/*.rb')].sort.each do |file|
     puts "Seeding dictionary file #{file.split('/').last}"
     require file
 end
-
-
-# words
-# articles
-
-# verbs
-
-# nouns
-
-# adverbs
-
-# prepositions
-
-# conjunctions 
-
-# adjectives

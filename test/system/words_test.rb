@@ -16,7 +16,7 @@ class WordsTest < ApplicationSystemTestCase
 
     fill_in "Language", with: @word.language_id
     fill_in "Loc", with: @word.loc
-    fill_in "Word-definition", with: @word.word-definition_id
+    fill_in "Word-definition", with: @word.word_definition_id
     click_on "Create Word"
 
     assert_text "Word was successfully created"
@@ -29,7 +29,7 @@ class WordsTest < ApplicationSystemTestCase
 
     fill_in "Language", with: @word.language_id
     fill_in "Loc", with: @word.loc
-    fill_in "Word-definition", with: @word.word-definition_id
+    fill_in "Word-definition", with: @word.word_definition_id
     click_on "Update Word"
 
     assert_text "Word was successfully updated"

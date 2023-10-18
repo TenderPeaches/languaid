@@ -1,15 +1,5 @@
 <%= form_with(model: adverb) do |form| %>
-  <% if adverb.errors.any? %>
-    <div style="color: red">
-      <h2><%= pluralize(adverb.errors.count, "error") %> prohibited this adverb from being saved:</h2>
-
-      <ul>
-        <% adverb.errors.each do |error| %>
-          <li><%= error.full_message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
+  <%= render "common/form_errors", model: adverb %>
 
   <div>
     <%= form.submit %>
