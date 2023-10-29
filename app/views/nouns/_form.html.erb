@@ -1,8 +1,6 @@
-<% # form_with(model: @noun) do |form| %>
-<% # form_tag nouns_path, method: :post %>
 <%= form_for :noun, { url: nouns_path } do |form| %>
   <% # render "common/form_errors", model: @noun %>
-
+  <%= throw 'noun_form' %>
     <%= render "words/fields", form: form, wordable_type: "noun" %>
 
   <% # even though it might make sense to define the gender alongside the locs, we are keeping the word-data and noun-data separate for now, for simlpicity's sake; the drawback is that the language loop must be defined twice: here and in words/fields %>

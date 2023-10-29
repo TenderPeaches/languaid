@@ -1,6 +1,8 @@
-<%= form_with(model: preposition) do |form| %>
-  <%= render "common/form_errors", model: preposition %>
+<%= form_for :preposition, { url: prepositions_path } do |form| %>
+  <% # render "common/form_errors", model: @preposition %>
 
+  <%= render "words/fields", form: form, wordable_type: "preposition" %>
+  
   <div>
     <%= form.submit %>
   </div>

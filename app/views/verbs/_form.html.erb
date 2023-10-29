@@ -1,6 +1,6 @@
 <%= form_for :verb, { url: verbs_path } do |form| %>
   <% # render "common/form_errors", model: @verb %>
-
+  <%# throw 'verb_form' %>
   <%= render "words/fields", form: form, wordable_type: "verb" %>
   
   <div>

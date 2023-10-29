@@ -1,0 +1,9 @@
+<%= form_tag "words/search" do |form| %>
+
+    <%= content_tag :div, class: "form-field" %>
+        <%= form.label :search, "Recherche" %>
+        <%= form.text_field :search %>
+    <% end %>
+
+    <%= form.submit %>
+<% end %>

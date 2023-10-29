@@ -11,8 +11,9 @@ class WordsController < ApplicationController
   
   end
 
-  # GET /dictionary
-  def dictionary 
+  # GET /dictionary/search
+  def search
+    
   end
 
   # GET /words/1 or /words/1.json

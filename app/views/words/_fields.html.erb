@@ -8,17 +8,15 @@
 
 <%# category tags %>
 <%= content_tag :div, class: "form-field" do %>
-    <%= form.label :word_tags, "Tags" %>
-    <%= form.collection_select :word_tags, WordTag.for_select, :id, :tag, { multiple: true } %>
 <% end %>
 
 <%= form.label "Le mot/expression" %>
 <% # each language gets its own loc %>
-<% Language.active.each do |lang| %>
+<% Language.active.each_with_index do |lang, i| %>
     <% # loc textfield %>
-    <%= content_tag :div, class: "form-field" do %>
+    <div class="form-field">
         <% # display language as label %>
         <%= form.label lang.shorthand, lang.name %> 
-        <%= form.text_field(:loc, name: wordable_type + "[" + lang.shorthand + "]" + "[loc]", id: wordable_type + "_" + lang.shorthand + "_loc") %> 
-    <% end %>
+        <%= form.text_field(:loc, name: wordable_type + "[" + lang.shorthand + "]" + "[loc]", id: wordable_type + "_" + lang.shorthand + "_loc", autofocus: i == 0) %> 
+    </div>
 <% end %>

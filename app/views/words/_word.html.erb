@@ -1,17 +1,12 @@
-<div id="<%= dom_id word %>">
-  <p>
-    <strong>Word-definition:</strong>
-    <%= word.word_definition_id %>
-  </p>
+<%= content_div, class: "card card--word", id: dom_id word do %>
+  <%= content_div, class: "card-title" %>
+    <%= word.wordable_type %> - <%= word.word_definition.definition %>
+  <% end %>
 
-  <p>
-    <strong>Language:</strong>
-    <%= word.language_id %>
-  </p>
+  <%= content_div, class: "card-list" %>
+    <% Language.active.each do |lang| %>
+      <%=  %>
+    <% end %>
+  <% end %>
 
-  <p>
-    <strong>Loc:</strong>
-    <%= word.loc %>
-  </p>
-
-</div>
+<% end %>
