@@ -1,6 +1,8 @@
-<%= form_with(model: article) do |form| %>
-  <%= render "common/form_errors", model: article %>
+<%= form_for :article, { url: articles_path } do |form| %>
+  <% # render "common/form_errors", model: @article %>
 
+  <%= render "words/fields", form: form, wordable_type: "article" %>
+  
   <div>
     <%= form.submit %>
   </div>

@@ -1,6 +1,8 @@
-<%= form_with(model: pronoun) do |form| %>
-  <%= render "common/form_errors", model: pronoun %>
+<%= form_for :pronoun, { url: pronouns_path } do |form| %>
+  <% # render "common/form_errors", model: @pronoun %>
 
+  <%= render "words/fields", form: form, wordable_type: "pronoun" %>
+  
   <div>
     <%= form.submit %>
   </div>

@@ -1,9 +1,15 @@
 <% # params: form, wordable_type %>
   
-<% # word definition %>
+<%# word definition %>
 <%= content_tag :div, class: "form-field" do %>
     <%= form.label :word_definition %>
     <%= form.text_field :word_definition %>
+<% end %>
+
+<%# category tags %>
+<%= content_tag :div, class: "form-field" do %>
+    <%= form.label :word_tags, "Tags" %>
+    <%= form.collection_select :word_tags, WordTag.for_select, :id, :tag, { multiple: true } %>
 <% end %>
 
 <%= form.label "Le mot/expression" %>

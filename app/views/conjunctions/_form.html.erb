@@ -1,6 +1,8 @@
-<%= form_with(model: conjunction) do |form| %>
-  <%= render "common/form_errors", model: conjunction %>
+<%= form_for :conjunction, { url: conjunctions_path } do |form| %>
+  <% # render "common/form_errors", model: @conjunction %>
 
+  <%= render "words/fields", form: form, wordable_type: "conjunction" %>
+  
   <div>
     <%= form.submit %>
   </div>

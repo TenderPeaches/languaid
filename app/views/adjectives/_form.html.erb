@@ -1,6 +1,8 @@
-<%= form_with(model: adjective) do |form| %>
-  <%= render "common/form_errors", model: adjective %>
+<%= form_for :adjective, { url: adjectives_path } do |form| %>
+  <% # render "common/form_errors", model: @adjective %>
 
+  <%= render "words/fields", form: form, wordable_type: "adjective" %>
+  
   <div>
     <%= form.submit %>
   </div>

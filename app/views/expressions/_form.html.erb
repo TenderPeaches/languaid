@@ -1,6 +1,8 @@
-<%= form_with(model: expression) do |form| %>
-  <%= render "common/form_errors", model: expression %>
+<%= form_for :expression, { url: expressions_path } do |form| %>
+  <% # render "common/form_errors", model: @expression %>
 
+  <%= render "words/fields", form: form, wordable_type: "expression" %>
+  
   <div>
     <%= form.submit %>
   </div>

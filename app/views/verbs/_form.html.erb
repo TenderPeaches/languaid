@@ -1,6 +1,8 @@
-<%= form_with(model: verb) do |form| %>
-  <%= render "common/form_errors", model: verb %>
+<%= form_for :verb, { url: verbs_path } do |form| %>
+  <% # render "common/form_errors", model: @verb %>
 
+  <%= render "words/fields", form: form, wordable_type: "verb" %>
+  
   <div>
     <%= form.submit %>
   </div>
