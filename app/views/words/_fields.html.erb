@@ -10,13 +10,13 @@
 <%= content_tag :div, class: "form-field" do %>
 <% end %>
 
-<%= form.label "Le mot/expression" %>
+<%= label_tag :locs, "Le mot/expression" %>
 <% # each language gets its own loc %>
 <% Language.active.each_with_index do |lang, i| %>
     <% # loc textfield %>
     <div class="form-field">
         <% # display language as label %>
         <%= form.label lang.shorthand, lang.name %> 
-        <%= form.text_field(:loc, name: wordable_type + "[" + lang.shorthand + "]" + "[loc]", id: wordable_type + "_" + lang.shorthand + "_loc", autofocus: i == 0) %> 
+        <%= text_field_tag wordable_type + "[" + lang.shorthand + "][loc]", "", { autofocus: i == 0 } %>
     </div>
 <% end %>

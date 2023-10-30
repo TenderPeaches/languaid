@@ -1,9 +1,2 @@
-<h1>New expression</h1>
-
-<%= render "form", expression: @expression %>
-
-<br>
-
-<div>
-  <%= link_to "Back to expressions", expressions_path %>
-</div>
+<%= render partial: "words/add_word_header" %>
+<%= render partial: "expressions/form" %>

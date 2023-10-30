@@ -1,11 +1,2 @@
-<div>
-    <%= link_to "< Back", add_words_menu_path %>
-</div>
-<h1>New noun</h1>
-
-    <%= render "nouns/form" %>
-
-<br>
-
-<div>
-</div>
+<%= render partial: "words/add_word_header" %>
+<%= render partial: "nouns/form" %>

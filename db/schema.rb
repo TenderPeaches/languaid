@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_05_26_013142) do
+ActiveRecord::Schema[7.0].define(version: 2023_10_29_014106) do
   create_table "adjectives", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -128,6 +128,15 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_26_013142) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "word_definition_tags", force: :cascade do |t|
+    t.integer "word_definition_id", null: false
+    t.integer "word_tag_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["word_definition_id"], name: "index_word_definition_tags_on_word_definition_id"
+    t.index ["word_tag_id"], name: "index_word_definition_tags_on_word_tag_id"
+  end
+
   create_table "word_definitions", force: :cascade do |t|
     t.string "definition", default: "", null: false
     t.datetime "created_at", null: false
@@ -135,11 +144,9 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_26_013142) do
   end
 
   create_table "word_tags", force: :cascade do |t|
-    t.integer "word_definition_id", null: false
     t.string "tag"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["word_definition_id"], name: "index_word_tags_on_word_definition_id"
   end
 
   create_table "word_usages", force: :cascade do |t|
@@ -173,7 +180,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_26_013142) do
   add_foreign_key "verb_conjugations", "verbs"
   add_foreign_key "verb_tenses", "tenses"
   add_foreign_key "verb_tenses", "verb_moods"
-  add_foreign_key "word_tags", "word_definitions"
+  add_foreign_key "word_definition_tags", "word_definitions"
+  add_foreign_key "word_definition_tags", "word_tags"
   add_foreign_key "word_usages", "regions"
   add_foreign_key "word_usages", "words"
   add_foreign_key "words", "languages"

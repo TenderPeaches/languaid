@@ -1,4 +1,5 @@
 class PronounsController < ApplicationController
+  include Wordable
   before_action :set_pronoun, only: %i[ show edit update destroy ]
 
   # GET /pronouns or /pronouns.json
@@ -21,17 +22,7 @@ class PronounsController < ApplicationController
 
   # POST /pronouns or /pronouns.json
   def create
-    @pronoun = Pronoun.new(pronoun_params)
-
-    respond_to do |format|
-      if @pronoun.save
-        format.html { redirect_to pronoun_url(@pronoun), notice: "Pronoun was successfully created." }
-        format.json { render :show, status: :created, location: @pronoun }
-      else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @pronoun.errors, status: :unprocessable_entity }
-      end
-    end
+    create_word(pronoun_params, Pronoun.new(), new_pronoun_path)  
   end
 
   # PATCH/PUT /pronouns/1 or /pronouns/1.json

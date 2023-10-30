@@ -1,4 +1,5 @@
 class ConjunctionsController < ApplicationController
+  include Wordable
   before_action :set_conjunction, only: %i[ show edit update destroy ]
 
   # GET /conjunctions or /conjunctions.json
@@ -21,17 +22,7 @@ class ConjunctionsController < ApplicationController
 
   # POST /conjunctions or /conjunctions.json
   def create
-    @conjunction = Conjunction.new(conjunction_params)
-
-    respond_to do |format|
-      if @conjunction.save
-        format.html { redirect_to conjunction_url(@conjunction), notice: "Conjunction was successfully created." }
-        format.json { render :show, status: :created, location: @conjunction }
-      else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @conjunction.errors, status: :unprocessable_entity }
-      end
-    end
+    create_word(conjunction_params, Conjunction.new(), new_conjunction_path)  
   end
 
   # PATCH/PUT /conjunctions/1 or /conjunctions/1.json

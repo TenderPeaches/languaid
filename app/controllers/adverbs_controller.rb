@@ -1,4 +1,5 @@
 class AdverbsController < ApplicationController
+  include Wordable
   before_action :set_adverb, only: %i[ show edit update destroy ]
 
   # GET /adverbs or /adverbs.json
@@ -21,17 +22,7 @@ class AdverbsController < ApplicationController
 
   # POST /adverbs or /adverbs.json
   def create
-    @adverb = Adverb.new(adverb_params)
-
-    respond_to do |format|
-      if @adverb.save
-        format.html { redirect_to adverb_url(@adverb), notice: "Adverb was successfully created." }
-        format.json { render :show, status: :created, location: @adverb }
-      else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @adverb.errors, status: :unprocessable_entity }
-      end
-    end
+    create_word(adverb_params, Adverb.new(), new_adverb_path)   
   end
 
   # PATCH/PUT /adverbs/1 or /adverbs/1.json
@@ -65,6 +56,16 @@ class AdverbsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def adverb_params
-      params.fetch(:adverb, {})
+      # locs are sent as children of a [lang_shorthand] json node, so need a dynamic process to set the list of accepted parameters
+      # define the adverb-level (or rather, data shared between all the adverb.objects, in this case only the definition) permitted params here
+      permitted_params = [:word_definition]
+      # look through active languages
+      Language.active.each do |lang|
+        # add language shorthand as an expected key from the form POSTed request, as a symbol
+        permitted_params << { lang.shorthand.to_sym => [ :loc ] }
+      end
+      
+      # haven't found a way to declare dynamic parameters inline, so declaring them before with added benefits of clarity
+      permitted = params.require(:adverb).permit(permitted_params)
     end
 end

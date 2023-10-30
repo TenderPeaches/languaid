@@ -1,4 +1,5 @@
 class VerbsController < ApplicationController
+  include Wordable
   before_action :set_verb, only: %i[ show edit update destroy ]
 
   # GET /verbs or /verbs.json
@@ -21,17 +22,7 @@ class VerbsController < ApplicationController
 
   # POST /verbs or /verbs.json
   def create
-    @verb = Verb.new(verb_params)
-
-    respond_to do |format|
-      if @verb.save
-        format.html { redirect_to verb_url(@verb), notice: "Verb was successfully created." }
-        format.json { render :show, status: :created, location: @verb }
-      else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @verb.errors, status: :unprocessable_entity }
-      end
-    end
+    create_word(verb_params, Verb.new(), new_verb_path)  
   end
 
   # PATCH/PUT /verbs/1 or /verbs/1.json

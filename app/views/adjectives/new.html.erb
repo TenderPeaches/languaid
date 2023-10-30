@@ -1,9 +1,2 @@
-<h1>New adjective</h1>
-
-<%= render "form", adjective: @adjective %>
-
-<br>
-
-<div>
-  <%= link_to "Back to adjectives", adjectives_path %>
-</div>
+<%= render partial: "words/add_word_header" %>
+<%= render partial: "adjectives/form" %>

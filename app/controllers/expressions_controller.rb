@@ -1,4 +1,5 @@
 class ExpressionsController < ApplicationController
+  include Wordable
   before_action :set_expression, only: %i[ show edit update destroy ]
 
   # GET /expressions or /expressions.json
@@ -21,17 +22,7 @@ class ExpressionsController < ApplicationController
 
   # POST /expressions or /expressions.json
   def create
-    @expression = Expression.new(expression_params)
-
-    respond_to do |format|
-      if @expression.save
-        format.html { redirect_to expression_url(@expression), notice: "Expression was successfully created." }
-        format.json { render :show, status: :created, location: @expression }
-      else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @expression.errors, status: :unprocessable_entity }
-      end
-    end
+    create_word(expression_params, Expression.new(), new_expression_path)  
   end
 
   # PATCH/PUT /expressions/1 or /expressions/1.json

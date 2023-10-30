@@ -1,4 +1,5 @@
 class PrepositionsController < ApplicationController
+  include Wordable
   before_action :set_preposition, only: %i[ show edit update destroy ]
 
   # GET /prepositions or /prepositions.json
@@ -21,17 +22,7 @@ class PrepositionsController < ApplicationController
 
   # POST /prepositions or /prepositions.json
   def create
-    @preposition = Preposition.new(preposition_params)
-
-    respond_to do |format|
-      if @preposition.save
-        format.html { redirect_to preposition_url(@preposition), notice: "Preposition was successfully created." }
-        format.json { render :show, status: :created, location: @preposition }
-      else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @preposition.errors, status: :unprocessable_entity }
-      end
-    end
+    create_word(preposition_params, Preposition.new(), new_preposition_path)  
   end
 
   # PATCH/PUT /prepositions/1 or /prepositions/1.json

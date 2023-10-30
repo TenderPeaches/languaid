@@ -1401,3 +1401,1263 @@ Word.create(language_id: 1, loc: "crayon", word_definition: word_def, wordable: 
 Word.create(language_id: 2, loc: "pencil", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
 Word.create(language_id: 3, loc: "lápiz", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
 
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "sport", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "sport", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "deporte", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "équipe", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "team", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "equipo", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "gymnase", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "gym", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "gimnasio", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "exercice", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "exercise", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "ejercicio", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "course", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "race", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "carrera", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "football", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "football", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "fútbol", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "baseball", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "baseball", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "béisbol", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "basketball", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "basketball", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "baloncesto", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "golf", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "golf", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "golf", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "volleyball", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "volleyball", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "vóleibol", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "cyclisme", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "cycling", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "ciclismo", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "handball", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "handball", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "balonmano", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "balle", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "ball", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "pelota", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "basketball", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "basketball", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "básquetbol", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "marathon", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "marathon", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "maratón", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "bain", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "bath", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "baño", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "douche", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "shower", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "ducha", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "rire", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "laugh", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "risa", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "souvenir", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "memory", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "recuerdo", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "cigarette", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "cigarette", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "cigarillo", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "baggage", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "luggage", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "equipaje", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "vol", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "flight", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "vuelo", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "rue", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "street", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "calle", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "autoroute", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "highway", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "carretera", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "pont", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "bridge", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "puente", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "aéroport", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "airport", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "aeropuerto", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "station", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "station", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "estación", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "arrêt", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "stop", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "parada", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "passager", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "passenger", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "pasajero", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "voiture", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "car", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "carro", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "automobile", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "automobile", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "automóvil", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "voiture", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "car", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "coche", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "taxi", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "taxi", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "taxi", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "train", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "train", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "tren", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "autobus", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "bus", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "autobús", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "métro", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "subway", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "metro", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "tramway", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "tram", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "tranvía", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "avion", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "plane", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "avión", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "bateau", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "boat", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "barco", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "motocyclette", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "motorbike", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "motocicleta", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "bicycle", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "bike", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "bicicleta", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "planche à rouler", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "skateboard", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "patineta", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "argent", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "money", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "dinero", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "chèque", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "check", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "cuenta", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "carte de crédit", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "credit card", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "tarjeta de crédito", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "comptant", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "cash", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "efectivo", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "dollar", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "dollar", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "dolár", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "peso", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "peso", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "peso", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "centîme", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "cent", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "centavo", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "cadeau", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "gift", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "regalo", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "prix", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "price", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "precio", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "amour", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "love", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "amor", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "faim", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "hunger", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "hambre", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "soif", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "thirst", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "sed", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "stress", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "stress", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "estrés", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "édifice", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "building", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "edificio", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "entreprise", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "business", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "negocio", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "magasin", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "store", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "tienda", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "hôpital", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "hospital", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "hospital", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "école", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "school", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "escuela", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "université", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "university", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "universidad", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "musée", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "museum", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "museo", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "zoo", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "zoo", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "zoológico", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "stade", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "stadium", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "estadio", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "hôtel", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "hotel", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "hotel", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "restaurant", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "restaurant", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "restaurante", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "bar", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "bar", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "bar", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "usine", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "factory", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "fabrica", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "marché", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "market", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "mercado", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "supermarché", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "supermarket", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "supermercado", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "banque", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "bank", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "banco", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "cinéma", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "cinema", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "cine", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "théâtre", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "theater", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "teatro", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "librairie", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "library", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "libraria", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "église", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "church", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "iglesia", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "cathédrale", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "cathedral", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "catedral", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "abbé", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "abbey", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "abadía", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "château", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "castle", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "castillo", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "parc", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "park", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "parque", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "ferme", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "farm", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "granja", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "grande", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "barn", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "granja", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "centre-ville", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "downtown", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "centro", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "maison", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "house", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "casa", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "appartement", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "apartment", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "apartamento", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "piscine", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "pool", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "piscina", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "jardin", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "garden", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "jardin", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "cour", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "backyard", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "patio", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "terrain de jeu", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "playground", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "patio de juego", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "porte", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "door", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "puerta", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "fenêtre", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "window", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "ventana", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "plancher", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "floor", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "píso", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "mur", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "wall", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "pared", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "entrée", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "entrance", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "entrada", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "classe", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "class", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "clase", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "salle de classe", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "classroom", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "aula", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "pièce", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "room", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "cuarto", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "baño", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "bathroom", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "salle de bains", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "toilettes", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "bathroom", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "servicios", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "salon", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "living room", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "salla", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "hall", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "hall", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "salón", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "cuisine", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "kitchen", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "cocina", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "chambre", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "bedroom", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "dormitorio", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "chambre", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "bedroom", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "habitación", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "bureau", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "office", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "oficina", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "billet", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "ticket", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "boleto", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "valise", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "suitcase", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "maleta", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "passeport", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "passport", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "pasaporte", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "menu", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "menu", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "menú", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "médicine", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "medicine", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "medicina", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "brosse", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "brush", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "cepillo", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "savon", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "soap", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "jábon", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "peigne", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "comb", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "peine", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "maquillage", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "makeup", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "maquillaje", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "shampoing", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "shampoo", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "champú", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "sac", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "bag", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "bolsa", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "conserve", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "can", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "lata", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "jouet", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "toy", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "juguete", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "poupée", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "doll", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "muñeta", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "clé", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "key", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "llave", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "verre", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "glass", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "vaso", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "coupe", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "cup", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "copa", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "tasse", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "cup", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "taza", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "choppe", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "mug", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "tazón", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "assiette", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "plate", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "plato", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "bouteille", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "bottle", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "botella", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "cuillère", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "spoon", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "cuchara", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "fourchette", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "fork", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "tenedor", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "couteau", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "knife", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "cuchillo", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "téléphone", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "phone", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "teléfono", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "ordinateur", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "computer", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "computadora", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "ordinateur portable", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "laptop", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "portátil", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "téléphone cellulaire", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "cellphone", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "celular", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "télévision", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "television", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "tele", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "radio", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "radio", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "radio", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "caméra", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "camera", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "cámara", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "ameublement", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "furniture", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "muebles", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "tiroir", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "drawer", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "cajone", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "machine à laver", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "washing machine", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "lavadora", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "téléviseur", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "television", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "televisor", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "lampe", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "lamp", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "lámpara", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "horloge", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "clock", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "reloj", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "table", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "table", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "mesa", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "bureau", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "desk", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "escritorio", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "étagère", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "bookshelf", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "estanteria", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "tableau", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "chalkboard", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "pizarra", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "chaise", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "chair", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "silla", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "fauteuil", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "armchair", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "sillon", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "sofa", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "sofa", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "sofá", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "lit", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "bed", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "cama", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "tapis", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "carpet", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "alfombra", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "commode", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "dresser", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "cómoda", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "miroir", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "mirror", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "espejo", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "barbecue", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "barbeque", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "parilla", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "réfrégirateur", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "fridge", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "nevera", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "réfrégirateur", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "fridge", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "refrigerador", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "cafétière", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "coffee maker", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "cafetera", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "cuisinière", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "stove", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "estufa", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "vêtements", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "clothes", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "ropa", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "uniforme", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "uniform", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "uniform", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "robe", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "dress", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "vestido", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "gaminet", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "t-shirt", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "camiseta", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "jaquette", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "jacket", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "chaqueta", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "manteau", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "coat", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "abrigo", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "blouse", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "blouse", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "blusa", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "complet", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "suit", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "traje", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "chandail", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "sweater", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "suéter", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "chapeau", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "hat", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "sombrero", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "casquette", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "cap", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "gorra", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "châle", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "shawl", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "chal", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "collier", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "collar", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "collar", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "cravate", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "tie", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "corbata", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "chaussette", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "sock", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "calcetín", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "soulier", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "shoe", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "zapato", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "botte", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "boot", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "bota", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "ceinture", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "belt", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "cinturón", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "sacoche", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "purse", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "cartera", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "lunettes", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "glasses", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "lentes", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "lunettes de soleil", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "sunglasses", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "gafas de sol", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "montre", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "watch", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "reloj", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "bague", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "ring", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "sortija", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "parapluie", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "umbrella", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "paraguas", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "jupe", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "skirt", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "falda", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "pantalons", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "pants", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "pantalones", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "jeans", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "jeans", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "vaqueros", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "maillot de bain", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "swimsuit", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "traje de baño", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "groupe", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "group", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "grupo", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "type", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "type", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "tipo", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "paire", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "pair", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "par", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "machine", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "machine", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "máquina", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "plan", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "plan", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "plan", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "horaire", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "schedule", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "horario", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "paquet", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "package", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "paquete", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "boite", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "box", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "caja", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "projet", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "project", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "proyecto", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "fichier", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "file", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "archivo", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "site web", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "website", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "sitio", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "diplôme", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "diploma", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "diploma", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "note", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "grade", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "nota", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "prix", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "award", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "premio", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "entreprise", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "enterprise", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "empresa", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "compagnie", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "company", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "compañia", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "identification", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "identification", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "identificación", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "adresse", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "address", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "dirección", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "adresse courriel", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "email address", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "correo electronico", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "partie", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "part", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "parte", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "place", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "place", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "lugar", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "campement", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "camp", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "campamento", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "livre", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "book", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "libro", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "papier", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "paper", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "papel", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "page", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "page", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "página", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "bande dessinée", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "comic", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "cómic", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "dictionnaire", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "dictionary", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "diccionario", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "cahier de notes", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "notebook", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "cuaderno", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "livre de textes", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "textbook", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "libro de texto", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "lettre", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "letter", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "carta", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "note", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "note", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "nota", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "carte", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "card", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "tarjeta", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "dossier", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "folder", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "carpeta", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "document", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "document", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "documento", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "journal", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "newspaper", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "periódico", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "journal", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "diary", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "diario", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "revue", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "magazine", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "revista", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "album", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "album", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "álbum", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "pays", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "country", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "pais", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "capitale", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "capital", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "capital", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "ville", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "city", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "ciudad", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "village", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "town", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "pueblo", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "village", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "village", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "aldea", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "site", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "site", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "sitio", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "région", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "area", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "área", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "guerre", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "war", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "guerra", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "destruction", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "destruction", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "destrucción", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "Europe", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "Europe", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "Europe", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "Afrique", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "Africa", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "África", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "Mexique", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "Mexico", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "México", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "États-Unis", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "United States", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "Estados Unidos", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "Angleterre", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "England", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "Inglaterra", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "France", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "France", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "Francia", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "Espagne", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "Spain", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "España", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "Allemagne", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "Germany", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "Alemania", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "Suède", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "Sweden", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "Suecia", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "Suisse", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "Switzerland", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "Suiza", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "Chine", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "China", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "Chino", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "Bordeaux", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "Bordeaux", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "Burdeos", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "nationalité", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "nationality", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "nacionalidad", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "français", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "French", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "franceso", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "latin", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "Latin", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "latino", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "chilien", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+Word.create(language_id: 2, loc: "Chilean", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "chileno", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "directions", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "directions", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "direcciones", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "gauche", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "left", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "izquierda", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "droite", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "right", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "derecha", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "ligne droite", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+Word.create(language_id: 2, loc: "straight line", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
+Word.create(language_id: 3, loc: "derecho", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
