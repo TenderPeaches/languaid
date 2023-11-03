@@ -444,3 +444,403 @@ word_def = WordDefinition.create(definition: "surpris")
 Word.create(loc: "surpris", word_definition: word_def, language: lang__fr, wordable: Adjective.create)
 Word.create(loc: "surprised", word_definition: word_def, language: lang__en, wordable: Adjective.create)
 Word.create(loc: "sorprendido", word_definition: word_def, language: lang__en, wordable: Adjective.create)
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "parfait", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "perfect", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "perfecto", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "bien", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "good", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "bueno", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "mauvais", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "bad", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "malo", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "super", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "great", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "gran", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "fantastique", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "fantastic", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "fantástico", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "excellent", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "excellent", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "excelente", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "merveilleux", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "wonderful", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "estupendo", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "spécial", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "special", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "especial", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "génial", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "amazing", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "genial", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "incroyable", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "incredible", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "increíble", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "agréable", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "enjoyable", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "agradable", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "mieux", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "better", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "mejor", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "pire", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "worse", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "peor", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "brisé", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "broken", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "roto", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "frais", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "fresh", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "fresco", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "fermé", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "closed", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "cerrado", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "ouvert", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "open", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "abierto", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "plein", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "full", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "lleno", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "vide", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "empty", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "vacio", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "abandonné", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "abandoned", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "abandonado", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "prêt", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "ready", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "listo", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "occupé", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "busy", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "occupado", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "en vente", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "on sale", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "en oferta", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "disponible", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "available", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "disponible", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "marrié", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "wed", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "casado", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "court", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "short", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "bajo", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "grand", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "tall", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "alto", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "petit", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "small", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "pequeño", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "gros", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "big", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "grande", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "long", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "long", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "largo", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "gros", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "fat", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "gordo", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "mince", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "thin", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "delgado", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "élégant", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "elegant", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "elegante", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "joli", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "pretty", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "bonito", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "beau", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "pretty", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "bello", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "mignon", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "cute", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "lindo", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "beau", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "handsome", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "guapo", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "beau", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "beautiful", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "precioso", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "joli", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "beautiful", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "hermoso", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "blanc", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "white", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "blanco", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "gris", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "grey", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "gris", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "noir", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "black", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "negro", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "jaune", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "yellow", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "amarillo", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "very", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "green", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "verde", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "rouge", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "red", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "rojo", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "bleu", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "blue", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "azul", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "brun", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "brown", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "marrón", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "orange", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "orange", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "naranja", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "pourpre", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "purple", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "morado", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "pâle", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "pale", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "pálido", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "frit", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "fried", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "frito", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "grillé", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "grilled", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "asado", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "sucré", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "sweet", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "dulce", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "végétarien", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "vegetarian", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "vegetariano", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "jeune", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "young", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "joven", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "vieux", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "old", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "viejo", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "plus jeune", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "younger", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "menore", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "plus vieux", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "older", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "mayore", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "nouveau", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "new", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "nuevo", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "moderne", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "modern", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "moderno", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "chaud", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "warm", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "calor", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "chaud", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "hot", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "caliente", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "chaud", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "warm", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "calurosos", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "froid", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "cold", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "frio", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "mouillé", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "wet", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "mojado", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "sec", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "dry", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "seco", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "piquant", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "spicy", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "piquante", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "doux", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "soft", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "suave", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "international", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "international", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "internacional", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "espagnol", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "spanish", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "españolo", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "français", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "french", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "franceso", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "anglais", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "english", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "ingleso", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "portugais", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "portuguese", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "portugueso", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "américain", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "american", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "americano", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "mexicain", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "mexican", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "mexicano", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "mien", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "mine", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "mío", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "tien", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "yours", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "tuyo", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "sien", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "his", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "suyo", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "notre", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "ours", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "nuestro", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "propre", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "own", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "proprio", word_definition: word_def, wordable: Adjective.create({}))

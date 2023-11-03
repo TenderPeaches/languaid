@@ -1,6 +1,6 @@
 module Wordable extend ActiveSupport::Concern
     # @params = noun_params
-    # @new_wordable = Noun.new(gender_id: word_params[:gender_id])
+    # @new_wordable = { "lang.shorthand" => Noun.new(gender_id: word_params[lang.shorthand][:gender_id]) } or just a single instance if no wordable-parameters necessary (like gender_id)
     # @success_redirect_path = new_noun_path
     def create_word(params, new_wordable, success_redirect_path)
     
@@ -26,7 +26,20 @@ module Wordable extend ActiveSupport::Concern
                 word_params = valid_params[lang.shorthand]
 
                 # create the worable type which which the word will be linked through the wordable association
-                wordable = new_wordable
+                # if new_wordable is a hash, the actual new wordable is placed under the appropriate lang.shorthand key
+                if new_wordable.is_a? Hash
+                    # confirm the hash has the proper language key
+                    if  
+                        wordable = new_wordable[lang.shorthand]
+                    # if hash doesn't have the proper language key, should be a bug
+                    else
+                        throw "concerns/wordable::create_word => new_wordable hash doesn't have a " + lang.shorthand + " key"
+                    end
+                # otherwise, new_wordable is Wordable objec
+                else
+                    # assign as is
+                    wordable = new_wordable 
+                end
 
                 # save the word first (otherwise saving the word doesn't do it for some reason)
                 if wordable.save

@@ -1,6 +1,6 @@
 <%# param: @words - list of words to be displayed %>
 
-<%= content_tag :div, class="menu dictionary-menu" do %>
+<%= content_tag :div, class: "menu dictionary-menu" do %>
     <%= link_to "Rechercher des mots", search_word_path %>
     <%= link_to "Consulter par catégorie", view_dictionary_categories_path %>
 <% end %>

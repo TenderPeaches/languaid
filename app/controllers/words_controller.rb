@@ -11,9 +11,50 @@ class WordsController < ApplicationController
   
   end
 
-  # GET /dictionary/search
+  # GET /words/search
   def search
-    
+    # if search query has been submitted
+    if search_params[:search]
+      # matches = words that contain the search string
+      matches = Word.where('loc LIKE ?' , '%' + search_params[:search] + '%' )
+
+      # pre-emptive declaration of word_definitions of matches
+      @defs = []
+
+      # so as to prevent multiple matches of the same definition from appearing as duplicate results
+      matched_def_ids = []
+  
+
+      # for each matched word
+      matches.each_with_index do |match, i|
+        # word definition ID
+        def_id = match.word_definition_id
+        # if matched_def_ids includes the ID of match's word_definition, skip because the word will already appear in the results
+        unless matched_def_ids.include? (def_id)
+          # declare a hash that will contain each active language's translation of the matched word
+          @defs[i] = {}
+          # for each active language
+          Language.active.each do |lang|
+            # fetch the translation of the matched word
+            @defs[i][lang.shorthand] = Word.where(word_definition_id: def_id).where(language: lang).first
+          end
+
+          # add the definition to the list of matched IDs, to prevent duplicate results
+          matched_def_ids << def_id
+        end
+      end
+
+      respond_to do |format|
+        format.html { render :search_results }
+        format.json { render @defs }
+      end
+    # otherwise, no search query submitted
+    else
+      respond_to do |format|
+        # render the word search prompt
+        format.html { render :search }
+      end
+    end
   end
 
   # GET /words/1 or /words/1.json
@@ -70,11 +111,15 @@ class WordsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_word
-      @word = Word.find(params[:id])
+      @word = Word.find_by_id(params[:id])
     end
 
     # Only allow a list of trusted parameters through.
     def word_params
       params.require(:word).permit(:word_definition_id, :language_id, :loc)
+    end
+
+    def search_params
+        params.permit(:search, :commit)
     end
 end

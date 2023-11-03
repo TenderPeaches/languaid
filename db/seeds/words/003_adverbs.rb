@@ -434,3 +434,79 @@ word_def = WordDefinition.create(definition: "avec lenteur")
 Word.create(loc: "lentement", word_definition: word_def, language: lang__fr, wordable: Adverb.create)
 Word.create(loc: "slowly", word_definition: word_def, language: lang__en, wordable: Adverb.create)
 Word.create(loc: "despacio", word_definition: word_def, language: lang__es, wordable: Adverb.create)
+
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "loin", word_definition: word_def, wordable: Adverb.create({}))
+Word.create(language_id: 2, loc: "far", word_definition: word_def, wordable: Adverb.create({}))
+Word.create(language_id: 3, loc: "lejos", word_definition: word_def, wordable: Adverb.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "à côté de", word_definition: word_def, wordable: Adverb.create({}))
+Word.create(language_id: 2, loc: "next to", word_definition: word_def, wordable: Adverb.create({}))
+Word.create(language_id: 3, loc: "al lado", word_definition: word_def, wordable: Adverb.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "en avant de", word_definition: word_def, wordable: Adverb.create({}))
+Word.create(language_id: 2, loc: "in front", word_definition: word_def, wordable: Adverb.create({}))
+Word.create(language_id: 3, loc: "enfrente", word_definition: word_def, wordable: Adverb.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "sous", word_definition: word_def, wordable: Adverb.create({}))
+Word.create(language_id: 2, loc: "under", word_definition: word_def, wordable: Adverb.create({}))
+Word.create(language_id: 3, loc: "debajo", word_definition: word_def, wordable: Adverb.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "sur", word_definition: word_def, wordable: Adverb.create({}))
+Word.create(language_id: 2, loc: "on", word_definition: word_def, wordable: Adverb.create({}))
+Word.create(language_id: 3, loc: "sobre", word_definition: word_def, wordable: Adverb.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "derrière", word_definition: word_def, wordable: Adverb.create({}))
+Word.create(language_id: 2, loc: "behind", word_definition: word_def, wordable: Adverb.create({}))
+Word.create(language_id: 3, loc: "detrás", word_definition: word_def, wordable: Adverb.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "entre", word_definition: word_def, wordable: Adverb.create({}))
+Word.create(language_id: 2, loc: "between", word_definition: word_def, wordable: Adverb.create({}))
+Word.create(language_id: 3, loc: "entre", word_definition: word_def, wordable: Adverb.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "à l'intérieur", word_definition: word_def, wordable: Adverb.create({}))
+Word.create(language_id: 2, loc: "inside", word_definition: word_def, wordable: Adverb.create({}))
+Word.create(language_id: 3, loc: "dentro", word_definition: word_def, wordable: Adverb.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "", word_definition: word_def, wordable: Adverb.create({}))
+Word.create(language_id: 2, loc: "", word_definition: word_def, wordable: Adverb.create({}))
+Word.create(language_id: 3, loc: "", word_definition: word_def, wordable: Adverb.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "à l'extérieur", word_definition: word_def, wordable: Adverb.create({}))
+Word.create(language_id: 2, loc: "outside", word_definition: word_def, wordable: Adverb.create({}))
+Word.create(language_id: 3, loc: "fuera", word_definition: word_def, wordable: Adverb.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "à l'arrière", word_definition: word_def, wordable: Adverb.create({}))
+Word.create(language_id: 2, loc: "in the back", word_definition: word_def, wordable: Adverb.create({}))
+Word.create(language_id: 3, loc: "atrás", word_definition: word_def, wordable: Adverb.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "en bas", word_definition: word_def, wordable: Adverb.create({}))
+Word.create(language_id: 2, loc: "downstairs", word_definition: word_def, wordable: Adverb.create({}))
+Word.create(language_id: 3, loc: "abajo", word_definition: word_def, wordable: Adverb.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "en haut", word_definition: word_def, wordable: Adverb.create({}))
+Word.create(language_id: 2, loc: "upstairs", word_definition: word_def, wordable: Adverb.create({}))
+Word.create(language_id: 3, loc: "arriba", word_definition: word_def, wordable: Adverb.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "plus près", word_definition: word_def, wordable: Adverb.create({}))
+Word.create(language_id: 2, loc: "nearest", word_definition: word_def, wordable: Adverb.create({}))
+Word.create(language_id: 3, loc: "más cercana", word_definition: word_def, wordable: Adverb.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "à la fin de", word_definition: word_def, wordable: Adverb.create({}))
+Word.create(language_id: 2, loc: "at the end of", word_definition: word_def, wordable: Adverb.create({}))
+Word.create(language_id: 3, loc: "al final de", word_definition: word_def, wordable: Adverb.create({}))

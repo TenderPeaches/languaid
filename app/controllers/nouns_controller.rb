@@ -22,7 +22,13 @@ class NounsController < ApplicationController
 
   # POST /nouns or /nouns.json
   def create
-    create_word(noun_params, Noun.new(gender_id: noun_params[:gender_id]), new_noun_path)  
+    wordables = {}
+    Language.active.each do |lang|
+      if noun_params.has_key? lang.shorthand
+        wordables[lang.shorthand] = Noun.new(gender_id: noun_params[lang.shorthand][:gender_id])
+      end
+    end
+    create_word(noun_params, wordables, new_noun_path)  
   end
 
 
