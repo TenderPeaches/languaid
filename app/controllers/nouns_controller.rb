@@ -65,7 +65,7 @@ class NounsController < ApplicationController
     def noun_params
       # locs are sent as children of a [lang_shorthand] json node, so need a dynamic process to set the list of accepted parameters
       # define the noun-level (or rather, data shared between all the noun.objects, in this case only the definition) permitted params here
-      permitted_params = [:word_definition]
+      permitted_params = [:word_definition, :word_tag_ids => []]
       # look through active languages
       Language.active.each do |lang|
         # add language shorthand as an expected key from the form POSTed request, as a symbol
@@ -74,5 +74,8 @@ class NounsController < ApplicationController
       
       # haven't found a way to declare dynamic parameters inline, so declaring them before with added benefits of clarity
       permitted = params.require(:noun).permit(permitted_params)
+      # filter out hidden input value
+      permitted[:word_tag_ids].reject! { |id| id if id == "" }
+      return permitted
     end
 end

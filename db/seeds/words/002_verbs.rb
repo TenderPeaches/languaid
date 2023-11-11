@@ -834,3 +834,23 @@ word_def = WordDefinition.create({"definition"=>""})
 Word.create(language_id: 1, loc: "cracher", word_definition: word_def, wordable: Verb.create({}))
 Word.create(language_id: 2, loc: "to spit", word_definition: word_def, wordable: Verb.create({}))
 Word.create(language_id: 3, loc: "escupir", word_definition: word_def, wordable: Verb.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "laisser", word_definition: word_def, wordable: Verb.create({}))
+Word.create(language_id: 2, loc: "to leave", word_definition: word_def, wordable: Verb.create({}))
+Word.create(language_id: 3, loc: "dejar", word_definition: word_def, wordable: Verb.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "mériter", word_definition: word_def, wordable: Verb.create({}))
+Word.create(language_id: 2, loc: "to deserve", word_definition: word_def, wordable: Verb.create({}))
+Word.create(language_id: 3, loc: "merecer", word_definition: word_def, wordable: Verb.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "démontrer", word_definition: word_def, wordable: Verb.create({}))
+Word.create(language_id: 2, loc: "to show", word_definition: word_def, wordable: Verb.create({}))
+Word.create(language_id: 3, loc: "demonstrar", word_definition: word_def, wordable: Verb.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "endurer", word_definition: word_def, wordable: Verb.create({}))
+Word.create(language_id: 2, loc: "to bear", word_definition: word_def, wordable: Verb.create({}))
+Word.create(language_id: 3, loc: "aguantar", word_definition: word_def, wordable: Verb.create({}))

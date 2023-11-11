@@ -116,7 +116,7 @@ class WordsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def word_params
-      params.require(:word).permit(:word_definition_id, :language_id, :loc)
+      params.require(:word).permit(:word_definition_id, :language_id, :loc, :word_tag_ids)
     end
 
     def search_params

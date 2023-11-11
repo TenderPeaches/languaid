@@ -44,10 +44,10 @@ module Wordable extend ActiveSupport::Concern
                 # save the word first (otherwise saving the word doesn't do it for some reason)
                 if wordable.save
 
-                # create the word that implements the definition in the given language and add it to the array of words to be added
-                words << Word.new(loc: word_params[:loc], word_definition: word_definition, language: lang, wordable: wordable)
+                    # create the word that implements the definition in the given language and add it to the array of words to be added
+                    words << Word.new(loc: word_params[:loc], word_definition: word_definition, language: lang, wordable: wordable)
 
-                puts "word" << words.inspect << words.last.inspect
+                    puts "word" << words.inspect << words.last.inspect
 
                 # if saving the wordable raised any error
                 else
@@ -57,25 +57,34 @@ module Wordable extend ActiveSupport::Concern
                 end 
             end
         end
+        
+        # link the tags, if any
+        params[:word_tag_ids].each do |tag_id|
+            linked_tag = WordDefinitionTag.new(word_definition: word_definition, word_tag: WordTag.find_by_id(tag_id))
+            unless linked_tag.save
+                errors << linked_tag.errors
+            end
+        end
+
+        # go through each of the words to be added
+        words.each do |word|
+
+            # save the word - by doing so, it will also save the definition (if not saved yet) and the wordable, with the errors bubbling up
+            unless word.save
+                # save the errors
+                errors << word.errors
+            end
+        end
 
         # create the response
         respond_to do |format|
-
-            # go through each of the words to be added
-            words.each do |word|
-    
-                # save the word - by doing so, it will also save the definition (if not saved yet) and the wordable, with the errors bubbling up
-                unless word.save
-                    # save the errors
-                    errors << word.errors
-                end
-            end
     
             # after all words have been saved, check if any errors were flagged; if none, the input is valid
             if errors.empty?
                 format.html { redirect_to success_redirect_path, notice: "Words matching definition " + word_definition.id.to_s + " were successfully created."}
                 format.json { render :show, status: :created }
             else
+                puts errors.inspect
                 format.html { render :new, status: :unprocessable_entity }
                 format.json { render json: errors, status: :unprocessable_entity }
             end

@@ -520,3 +520,8 @@ word_def = WordDefinition.create({"definition"=>""})
 Word.create(language_id: 1, loc: "peut-être", word_definition: word_def, wordable: Adverb.create({}))
 Word.create(language_id: 2, loc: "maybe", word_definition: word_def, wordable: Adverb.create({}))
 Word.create(language_id: 3, loc: "quizá", word_definition: word_def, wordable: Adverb.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "ainsi", word_definition: word_def, wordable: Adverb.create({}))
+Word.create(language_id: 2, loc: "like that", word_definition: word_def, wordable: Adverb.create({}))
+Word.create(language_id: 3, loc: "así", word_definition: word_def, wordable: Adverb.create({}))

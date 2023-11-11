@@ -5,7 +5,7 @@
 
 namespace :export do
     desc "Exports current dictionary to Rails seeds"
-    task :as_seeds, [:from_date] => :environment do |task, args|
+    task :words, [:from_date] => :environment do |task, args|
         WordDefinition.where(created_at: args[:from_date].to_s..).each_with_index do |word_definition, i|
             puts "word_def = WordDefinition.create(#{word_definition.serializable_hash.delete_if{|key,value| ['created_at', 'updated_at', 'id'].include?(key) }})"
             Word.where(word_definition: word_definition).each do |word|
@@ -38,6 +38,13 @@ namespace :export do
             # trailing blank line
             puts ""
             
+        end
+    end
+
+    task :tags => :environment do |task, args|
+        WordDefinitionTag.all.each_with_index do |tag, i| 
+            #puts "WordDefinitionTag.create(#{tag.serializable_hash.delete_if{|key,value| ['created_at', 'updated_at', 'id'].include? (key) }}"
+            puts "WordDefinitionTag.create(word_definition_id: #{tag.word_definition_id}, word_tag_id: #{tag.word_tag_id})"
         end
     end
 end

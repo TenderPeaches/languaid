@@ -861,6 +861,6 @@ Word.create(language_id: 2, loc: "ancient", word_definition: word_def, wordable:
 Word.create(language_id: 3, loc: "antiguo", word_definition: word_def, wordable: Adjective.create({}))
 
 word_def = WordDefinition.create({"definition"=>""})
-Word.create(language_id: 1, loc: "remède", word_definition: word_def, wordable: Adjective.create({}))
-Word.create(language_id: 2, loc: "remedy", word_definition: word_def, wordable: Adjective.create({}))
-Word.create(language_id: 3, loc: "remedio", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 1, loc: "infidèle", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "unfaithful", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "infiel", word_definition: word_def, wordable: Adjective.create({}))

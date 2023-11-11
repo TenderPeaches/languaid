@@ -8,6 +8,8 @@
 
 <%# category tags %>
 <%= content_tag :div, class: "form-field" do %>
+    <%= form.label :word_tag_ids, "Tags" %>
+    <%= form.collection_select :word_tag_ids, WordTag.all, :id, :tag, {}, { multiple: true } %>
 <% end %>
 
 <%= label_tag :locs, "Le mot/expression" %>

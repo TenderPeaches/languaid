@@ -3656,3 +3656,23 @@ word_def = WordDefinition.create({"definition"=>""})
 Word.create(language_id: 1, loc: "plateau", word_definition: word_def, wordable: Noun.create({"gender_id"=>2}))
 Word.create(language_id: 2, loc: "trey", word_definition: word_def, wordable: Noun.create({"gender_id"=>nil}))
 Word.create(language_id: 3, loc: "bandeja", word_definition: word_def, wordable: Noun.create({"gender_id"=>3}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "remède", word_definition: word_def, wordable: Noun.create({gender_id: 2}))
+Word.create(language_id: 2, loc: "remedy", word_definition: word_def, wordable: Noun.create({}))
+Word.create(language_id: 3, loc: "remedio", word_definition: word_def, wordable: Noun.create({gender_id: 2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "rose", word_definition: word_def, wordable: Noun.create({gender_id: 3}))
+Word.create(language_id: 2, loc: "rose", word_definition: word_def, wordable: Noun.create({}))
+Word.create(language_id: 3, loc: "rose", word_definition: word_def, wordable: Noun.create({gender_id: 2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "plaisir", word_definition: word_def, wordable: Noun.create({gender_id: 3}))
+Word.create(language_id: 2, loc: "pleasure", word_definition: word_def, wordable: Noun.create({}))
+Word.create(language_id: 3, loc: "placer", word_definition: word_def, wordable: Noun.create({gender_id: 2}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "désir", word_definition: word_def, wordable: Noun.create({gender_id: 2}))
+Word.create(language_id: 2, loc: "desire", word_definition: word_def, wordable: Noun.create({}))
+Word.create(language_id: 3, loc: "deseo", word_definition: word_def, wordable: Noun.create({gender_id: 2}))
