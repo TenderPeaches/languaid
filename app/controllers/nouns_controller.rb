@@ -14,6 +14,7 @@ class NounsController < ApplicationController
 
   # GET /nouns/new
   def new
+    @tag_ids = session[:word_tag_ids] || []
   end
 
   # GET /nouns/1/edit
@@ -28,6 +29,7 @@ class NounsController < ApplicationController
         wordables[lang.shorthand] = Noun.new(gender_id: noun_params[lang.shorthand][:gender_id])
       end
     end
+
     create_word(noun_params, wordables, new_noun_path)  
   end
 

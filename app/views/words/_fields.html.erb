@@ -9,7 +9,7 @@
 <%# category tags %>
 <%= content_tag :div, class: "form-field" do %>
     <%= form.label :word_tag_ids, "Tags" %>
-    <%= form.collection_select :word_tag_ids, WordTag.all, :id, :tag, {}, { multiple: true } %>
+    <%= form.collection_select :word_tag_ids, WordTag.all, :id, :tag, { selected: @tag_ids }, { multiple: true } %>
 <% end %>
 
 <%= label_tag :locs, "Le mot/expression" %>

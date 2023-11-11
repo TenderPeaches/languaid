@@ -76,6 +76,9 @@ module Wordable extend ActiveSupport::Concern
             end
         end
 
+        # save tag IDs in session so that the next form can have them already selected
+        session[:word_tag_ids] = params[:word_tag_ids]
+
         # create the response
         respond_to do |format|
     
