@@ -844,3 +844,23 @@ word_def = WordDefinition.create({"definition"=>""})
 Word.create(language_id: 1, loc: "propre", word_definition: word_def, wordable: Adjective.create({}))
 Word.create(language_id: 2, loc: "own", word_definition: word_def, wordable: Adjective.create({}))
 Word.create(language_id: 3, loc: "proprio", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "en vrac", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "bulk", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "a granel", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "transgénique", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "transgenic", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "transgénica", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "ancien", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "ancient", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "antiguo", word_definition: word_def, wordable: Adjective.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "remède", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 2, loc: "remedy", word_definition: word_def, wordable: Adjective.create({}))
+Word.create(language_id: 3, loc: "remedio", word_definition: word_def, wordable: Adjective.create({}))

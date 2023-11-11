@@ -2,6 +2,7 @@
 
 <%= content_tag :div, class: "menu dictionary-menu" do %>
     <%= link_to "Rechercher des mots", search_word_path %>
+    <%= link_to "Gérer les catégories", word_tags_path %>
     <%# link_to "Consulter par catégorie", view_dictionary_categories_path %>
     <%= link_to "Retour", main_menu_path %>
 <% end %>

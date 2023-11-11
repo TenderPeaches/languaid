@@ -1,0 +1,18 @@
+<%= form_tag 'word_tags/assign' do |form| %>
+    <%= content_tag :div, class: "tree categories-tree" do %>
+        <%# see controller - @word-tags should contain only top-level word tags, that have no parents %>
+        <% @word_tags.each do |top_level_tag| %>
+            <%= content_tag :div, class: "tree-root" do %>
+                <%= form.radio_button_tag :tag, top_level_tag.id.to_s %>
+                <%= link_to top_level_tag.tag, edit_word_tag_path(top_level_tag.id) %>
+                <% top_level_tag.children.each do |child_node| %>
+                    <%= render partial: "word_tags/tree_node", locals: { parent: child_node, depth: 1, form: form } %>
+                <% end %>
+            <% end %>
+        <% end %>
+    <% end %>
+
+    <%= content_tag :div, class: "action-bar" do %>
+        <%= link_to  "+", new_word_tag_path %>
+    <% end %>
+<% end %>

@@ -1,9 +1,3 @@
-<div class="action-bar">
-    <%= link_to "<<<", main_menu_path %>
-    <%= link_to "<<", dictionary_menu_path %>
-    <%= link_to "<", search_word_path %>
-</div>
-
 <table class="search-results">
     <tr>
         <% Language.active.each do |lang| %>
@@ -12,7 +6,7 @@
             </th>
         <% end %>
     </tr>
-    <% @defs.each do |word_def| %>
+    <% defs.each do |word_def| %>
         <tr>
             <% Language.active.each do |lang| %>
                 <td>

@@ -3,7 +3,7 @@ class WordTagsController < ApplicationController
 
   # GET /word_tags or /word_tags.json
   def index
-    @word_tags = WordTag.all
+    @word_tags = WordTag.top_level
   end
 
   # GET /word_tags/1 or /word_tags/1.json

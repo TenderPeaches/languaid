@@ -45,7 +45,7 @@ class WordsController < ApplicationController
       end
 
       respond_to do |format|
-        format.html { render :search_results }
+        format.html { render :search }
         format.json { render @defs }
       end
     # otherwise, no search query submitted

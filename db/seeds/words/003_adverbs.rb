@@ -510,3 +510,13 @@ word_def = WordDefinition.create({"definition"=>""})
 Word.create(language_id: 1, loc: "à la fin de", word_definition: word_def, wordable: Adverb.create({}))
 Word.create(language_id: 2, loc: "at the end of", word_definition: word_def, wordable: Adverb.create({}))
 Word.create(language_id: 3, loc: "al final de", word_definition: word_def, wordable: Adverb.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "finalement", word_definition: word_def, wordable: Adverb.create({}))
+Word.create(language_id: 2, loc: "finally", word_definition: word_def, wordable: Adverb.create({}))
+Word.create(language_id: 3, loc: "al fin", word_definition: word_def, wordable: Adverb.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "peut-être", word_definition: word_def, wordable: Adverb.create({}))
+Word.create(language_id: 2, loc: "maybe", word_definition: word_def, wordable: Adverb.create({}))
+Word.create(language_id: 3, loc: "quizá", word_definition: word_def, wordable: Adverb.create({}))

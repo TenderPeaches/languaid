@@ -1,0 +1,13 @@
+.tree {
+    text-align: left;
+    margin: var(--size-l); 
+}
+
+.tree-node {
+    display: block;
+}
+
+.tree-spacing {
+    display: inline-block;
+    width: var(--size-xxl);
+}

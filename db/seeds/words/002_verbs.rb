@@ -774,3 +774,63 @@ word_def = WordDefinition.create({"definition"=>"empoisonner"})
 Word.create(language_id: 1, loc: "empoisonner", word_definition: word_def, wordable: Verb.create({}))
 Word.create(language_id: 2, loc: "to poison", word_definition: word_def, wordable: Verb.create({}))
 Word.create(language_id: 3, loc: "envenenar", word_definition: word_def, wordable: Verb.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "ruiner", word_definition: word_def, wordable: Verb.create({}))
+Word.create(language_id: 2, loc: "to ruin", word_definition: word_def, wordable: Verb.create({}))
+Word.create(language_id: 3, loc: "arruinar", word_definition: word_def, wordable: Verb.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "tromper", word_definition: word_def, wordable: Verb.create({}))
+Word.create(language_id: 2, loc: "to fool", word_definition: word_def, wordable: Verb.create({}))
+Word.create(language_id: 3, loc: "engañar", word_definition: word_def, wordable: Verb.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "suggérer", word_definition: word_def, wordable: Verb.create({}))
+Word.create(language_id: 2, loc: "to suggest", word_definition: word_def, wordable: Verb.create({}))
+Word.create(language_id: 3, loc: "sugerir", word_definition: word_def, wordable: Verb.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "être attentif", word_definition: word_def, wordable: Verb.create({}))
+Word.create(language_id: 2, loc: "to be alert", word_definition: word_def, wordable: Verb.create({}))
+Word.create(language_id: 3, loc: "estar alerta", word_definition: word_def, wordable: Verb.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "rembobiner", word_definition: word_def, wordable: Verb.create({}))
+Word.create(language_id: 2, loc: "to rewind", word_definition: word_def, wordable: Verb.create({}))
+Word.create(language_id: 3, loc: "rebobinar", word_definition: word_def, wordable: Verb.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "étonner", word_definition: word_def, wordable: Verb.create({}))
+Word.create(language_id: 2, loc: "to amaze", word_definition: word_def, wordable: Verb.create({}))
+Word.create(language_id: 3, loc: "asombrar", word_definition: word_def, wordable: Verb.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "se lever (Soleil)", word_definition: word_def, wordable: Verb.create({}))
+Word.create(language_id: 2, loc: "to rise (Sun)", word_definition: word_def, wordable: Verb.create({}))
+Word.create(language_id: 3, loc: "amanecer", word_definition: word_def, wordable: Verb.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "souffrir", word_definition: word_def, wordable: Verb.create({}))
+Word.create(language_id: 2, loc: "to suffer", word_definition: word_def, wordable: Verb.create({}))
+Word.create(language_id: 3, loc: "sufrir", word_definition: word_def, wordable: Verb.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "mâcher", word_definition: word_def, wordable: Verb.create({}))
+Word.create(language_id: 2, loc: "to chew", word_definition: word_def, wordable: Verb.create({}))
+Word.create(language_id: 3, loc: "masticar", word_definition: word_def, wordable: Verb.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "grandir", word_definition: word_def, wordable: Verb.create({}))
+Word.create(language_id: 2, loc: "to grow", word_definition: word_def, wordable: Verb.create({}))
+Word.create(language_id: 3, loc: "crecer", word_definition: word_def, wordable: Verb.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "injecter", word_definition: word_def, wordable: Verb.create({}))
+Word.create(language_id: 2, loc: "to inject", word_definition: word_def, wordable: Verb.create({}))
+Word.create(language_id: 3, loc: "inyectar", word_definition: word_def, wordable: Verb.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "cracher", word_definition: word_def, wordable: Verb.create({}))
+Word.create(language_id: 2, loc: "to spit", word_definition: word_def, wordable: Verb.create({}))
+Word.create(language_id: 3, loc: "escupir", word_definition: word_def, wordable: Verb.create({}))

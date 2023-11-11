@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_10_29_014106) do
+ActiveRecord::Schema[7.0].define(version: 2023_11_06_154459) do
   create_table "adjectives", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -141,6 +141,15 @@ ActiveRecord::Schema[7.0].define(version: 2023_10_29_014106) do
     t.string "definition", default: "", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "word_tag_relationships", force: :cascade do |t|
+    t.integer "parent_id", null: false
+    t.integer "child_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["child_id"], name: "index_word_tag_relationships_on_child_id"
+    t.index ["parent_id"], name: "index_word_tag_relationships_on_parent_id"
   end
 
   create_table "word_tags", force: :cascade do |t|
