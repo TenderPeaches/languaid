@@ -49,6 +49,11 @@ table {
     border-bottom-color: var(--color-primary-darker);       /* mesh with background, low contrast */           
  }
 
+ /* data table even row */
+ table tr:nth-child(2n) {
+    background-color: var(--color-sheen);                   /* highlight alternating row to help brain nenorize the data */
+ }
+
  /* number-style inputs */
 input[type="number"] {
     width: var(--size-xxl);                                 /* numbers in this website's context are usually limited to 1-2 digits */

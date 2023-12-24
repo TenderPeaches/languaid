@@ -13,34 +13,37 @@ class WordsController < ApplicationController
 
   # GET /words/search
   def search
+    @searched = search_params[:search]
     # if search query has been submitted
-    if search_params[:search]
+    if @searched
       # matches = words that contain the search string
-      matches = Word.where('loc LIKE ?' , '%' + search_params[:search] + '%' )
+      matches = Word.where('loc LIKE ?' , '%' + @searched + '%' )
 
-      # pre-emptive declaration of word_definitions of matches
+      # pre-emptive declaration of word_definitions of matched words
       @defs = []
 
       # so as to prevent multiple matches of the same definition from appearing as duplicate results
       matched_def_ids = []
-  
 
       # for each matched word
       matches.each_with_index do |match, i|
-        # word definition ID
+        # store the matched word's word_definition ID
         def_id = match.word_definition_id
         # if matched_def_ids includes the ID of match's word_definition, skip because the word will already appear in the results
         unless matched_def_ids.include? (def_id)
           # declare a hash that will contain each active language's translation of the matched word
-          @defs[i] = {}
+          translations = {}
           # for each active language
           Language.active.each do |lang|
             # fetch the translation of the matched word
-            @defs[i][lang.shorthand] = Word.where(word_definition_id: def_id).where(language: lang).first
+            translations[lang.shorthand] = Word.where(word_definition_id: def_id).where(language: lang).first
           end
 
           # add the definition to the list of matched IDs, to prevent duplicate results
           matched_def_ids << def_id
+
+          # add the translations hash to the final output
+          @defs.push(translations)  
         end
       end
 

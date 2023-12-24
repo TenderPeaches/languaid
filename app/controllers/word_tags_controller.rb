@@ -8,6 +8,13 @@ class WordTagsController < ApplicationController
 
   # GET /word_tags/1 or /word_tags/1.json
   def show
+    # alt method, not sure if more efficient but we want word_definition collection
+    #@defs = WordDefinitionTag.includes(:word_definition, word_definition: [:words, words: :language]).where(word_tag_id: params[:word_tag_id])
+    @defs = WordDefinition.joins("INNER JOIN word_definition_tags ON word_definition_tags.word_definition_id = word_definitions.id").where("word_definition_tags.word_tag_id = ?", params[:word_tag_id])
+  end
+
+  def list
+    @word_tags = WordTag.all
   end
 
   # GET /word_tags/new
@@ -65,6 +72,6 @@ class WordTagsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def word_tag_params
-      params.require(:word_tag).permit(:word_definition_id, :tag)
+      params.require(:word_tag).permit(:id, :word_definition_id, :tag)
     end
 end

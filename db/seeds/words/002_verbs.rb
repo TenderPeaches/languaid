@@ -854,3 +854,8 @@ word_def = WordDefinition.create({"definition"=>""})
 Word.create(language_id: 1, loc: "endurer", word_definition: word_def, wordable: Verb.create({}))
 Word.create(language_id: 2, loc: "to bear", word_definition: word_def, wordable: Verb.create({}))
 Word.create(language_id: 3, loc: "aguantar", word_definition: word_def, wordable: Verb.create({}))
+
+word_def = WordDefinition.create({"definition"=>""})
+Word.create(language_id: 1, loc: "annoncer", word_definition: word_def, wordable: Verb.create({}))
+Word.create(language_id: 2, loc: "to announce", word_definition: word_def, wordable: Verb.create({}))
+Word.create(language_id: 3, loc: "anunciar", word_definition: word_def, wordable: Verb.create({}))

@@ -1,4 +1,4 @@
-<table class="search-results">
+<table class="<%= html_class %>">
     <tr>
         <% Language.active.each do |lang| %>
             <th>
@@ -6,12 +6,16 @@
             </th>
         <% end %>
     </tr>
-    <% defs.each do |word_def| %>
+    <% @defs.each_with_index do |word_def, i| %>
         <tr>
             <% Language.active.each do |lang| %>
                 <td>
                     <% if word_def.has_key?(lang.shorthand) %>
-                        <%= word_def[lang.shorthand].loc %>
+                        <% if @searched %>
+                            <%= highlight(word_def[lang.shorthand].loc, @searched) %>
+                        <% else %>
+                            <%= word_def[lang.shorthand].loc %>
+                        <% end %>
                     <% end %>
                 </td>
             <% end %>

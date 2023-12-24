@@ -1,0 +1,20 @@
+<%= content_tag :table, class: "table--narrow" do %>
+    <%= content_tag :tr do %>
+        <%= content_tag :th do %>
+            ID
+        <% end %>
+        <%= content_tag :th do %>
+            Nom
+        <% end %>
+    <% end %>
+    <% @word_tags.each do |tag| %>
+        <%= content_tag :tr do %>
+            <%= content_tag :td do %>
+                <%= tag.id %>
+            <% end %>
+            <%= content_tag :td do %>
+                <%= tag.tag %>
+            <% end %>
+        <% end %>
+    <% end %>
+<% end %>

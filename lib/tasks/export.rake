@@ -35,16 +35,14 @@ namespace :export do
 
                 puts "Word.create(" + word_params + ")"
             end
+
+            # add associated tags, if any
+            word_definition.word_definition_tags.each do |tag|
+                puts "WordDefinitionTag.create(word_definition: word_def, word_tag_id: #{tag.word_tag_id})"
+            end
             # trailing blank line
             puts ""
             
-        end
-    end
-
-    task :tags => :environment do |task, args|
-        WordDefinitionTag.all.each_with_index do |tag, i| 
-            #puts "WordDefinitionTag.create(#{tag.serializable_hash.delete_if{|key,value| ['created_at', 'updated_at', 'id'].include? (key) }}"
-            puts "WordDefinitionTag.create(word_definition_id: #{tag.word_definition_id}, word_tag_id: #{tag.word_tag_id})"
         end
     end
 end
