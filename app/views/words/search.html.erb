@@ -19,7 +19,7 @@
             <%= "Mots contenant \"#{@searched}\"" %>
         <% end %>
         <%= content_tag :div, class: "search-results" do %>
-            <%= render partial: "words/list", locals: { defs: @defs, html_class: "search-results" } %>
+            <%= render partial: "words/list", locals: { word_defs: @defs, html_class: "search-results" } %>
         <% end %>
     <% end %>
 <% end %>

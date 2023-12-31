@@ -6,7 +6,7 @@
             </th>
         <% end %>
     </tr>
-    <% @defs.each_with_index do |word_def, i| %>
+    <% word_defs.each_with_index do |word_def, i| %>
         <tr>
             <% Language.active.each do |lang| %>
                 <td>

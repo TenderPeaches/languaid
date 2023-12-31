@@ -10,4 +10,26 @@ class WordTag < ApplicationRecord
   # look for word_tag that have no word_tag_relationship where child.id = word_tag
   scope :top_level, -> { where.missing(:parent_tag_relationships).distinct.includes(:children) }
   scope :for_select, -> { all }
+
+  # count the words linked to the tag
+  def word_count(include_children = true)
+    count = word_definition_tags.count
+    if include_children
+      children.each do |child_tag|
+        count += child_tag.word_count
+      end
+    end
+    return count
+  end
+
+  # gets the ID of this category + of every child category, to facilitate SQL requests
+  def ids_with_children
+    ids = [self.id]
+    if children 
+      children.each do |child_tag|
+        ids += child_tag.ids_with_children
+      end
+    end 
+    return ids
+  end
 end

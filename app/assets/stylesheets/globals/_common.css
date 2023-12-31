@@ -65,14 +65,16 @@
 
 /* on menu button hover */
 .menu a:hover,
-.action-bar a:hover {
+.action-bar a:hover,
+.clickable-row:hover {
     background: var(--color-secondary-dark);            /* invert colors to highlight */
     color: var(--color-white);                          /* use raw white for maximum contrast */
 }
 
 /* on a menu button click */
 .menu a:active,
-.action-bar a:active {
+.action-bar a:active,
+.clickable-row:active {
     border-style: var(--button-border-style-pressed);   /* appear as pressed button */
     background: var(--color-accent-darker);             /* use different color for additional highlight */
 }
@@ -92,5 +94,8 @@
 /* large for 5-6 columns; tables without classes have no width constraints and will fill the screen, so they can handle cases with 7+ columns */
 .table--large {
     max-width: calc(var(--size-xxxl) * 18);
+}
 
+.clickable-row {
+    cursor: pointer;
 }

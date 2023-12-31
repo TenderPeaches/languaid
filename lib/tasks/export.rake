@@ -2,11 +2,12 @@
 #* export to db/seeds/exports
 #* use date of latest file in db/seeds/exports as :from_date argument, so as to only export data that hasn't been seeded yet
 #* make sure to copy from db/seeds/exports file to the actual seed files
+#* usage: rails export:words['yyyy-dd-mm'] > db/seeds/exports/yyyy_mm_dd.rb
 
 namespace :export do
     desc "Exports current dictionary to Rails seeds"
     task :words, [:from_date] => :environment do |task, args|
-        WordDefinition.where(created_at: args[:from_date].to_s..).each_with_index do |word_definition, i|
+        WordDefinition.where(created_at: args[:from_date].to_date..).each_with_index do |word_definition, i|
             puts "word_def = WordDefinition.create(#{word_definition.serializable_hash.delete_if{|key,value| ['created_at', 'updated_at', 'id'].include?(key) }})"
             Word.where(word_definition: word_definition).each do |word|
                 excluded_keys = ['wordable_type', 'wordable_id', 'word_definition_id', 'created_at', 'updated_at', 'id']

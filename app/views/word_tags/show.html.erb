@@ -1,1 +1,12 @@
-<%= render @word_tag %>
+<%= content_tag :h1 do %>
+    <%= @word_tag.tag %>
+<% end %>
+<%= content_tag :div do %>
+    <%= content_tag :span, class: "contrast-text" do %>
+        Word count: 
+    <% end %>
+    <%= content_tag :span do %>
+        <%= @word_tag.word_count %>
+    <% end %>
+<% end %>
+<%= render partial: "words/list", locals: { html_class: 'words', word_defs: @words } %>

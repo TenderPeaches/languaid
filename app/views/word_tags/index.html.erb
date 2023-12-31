@@ -1,18 +1,26 @@
-<%= form_tag 'word_tags/assign' do |form| %>
-    <%= content_tag :div, class: "tree categories-tree" do %>
-        <%# see controller - @word-tags should contain only top-level word tags, that have no parents %>
-        <% @word_tags.each do |top_level_tag| %>
-            <%= content_tag :div, class: "tree-root" do %>
-                <%= form.radio_button_tag :tag, top_level_tag.id.to_s %>
-                <%= link_to top_level_tag.tag, edit_word_tag_path(top_level_tag.id) %>
-                <% top_level_tag.children.each do |child_node| %>
-                    <%= render partial: "word_tags/tree_node", locals: { parent: child_node, depth: 1, form: form } %>
-                <% end %>
-            <% end %>
+<%= content_tag :table, class: "table", data: { controller: "word-tags" } do %>
+    <%= content_tag :tr do %>
+        <%= content_tag :th do %>
+            ID
+        <% end %>
+        <%= content_tag :th do %>
+            Nom
+        <% end %>
+        <%= content_tag :th do %>
+            Mots
         <% end %>
     <% end %>
-
-    <%= content_tag :div, class: "action-bar" do %>
-        <%= link_to  "+", new_word_tag_path %>
+    <% @word_tags.each do |tag| %>
+        <%= content_tag :tr, class: "clickable-row", data: { id: tag.id.to_s, url: word_tag_path(tag.id.to_s) } do %>
+            <%= content_tag :td do %>
+                <%= tag.id %>
+            <% end %>
+            <%= content_tag :td do %>
+                <%= tag.tag %>
+            <% end %>
+            <%= content_tag :td do %>
+                <%= tag.word_count %>
+            <% end %>
+        <% end %>
     <% end %>
 <% end %>
