@@ -1,3 +1,5 @@
+<%# args[columns] => optional columns to be displayed alongside the word translations %>
+<% columns ||= {} %>
 <table class="<%= html_class %>">
     <tr>
         <% Language.active.each do |lang| %>
@@ -5,18 +7,26 @@
                 <%= lang.name %>
             </th>
         <% end %>
+        <% if columns[:tags] %>
+            <th>
+                Tags
+            </th>
+        <% end %>
     </tr>
-    <% word_defs.each_with_index do |word_def, i| %>
+    <% word_defs.each do |word_def| %>
         <tr>
-            <% Language.active.each do |lang| %>
+            <% word_def.active_translations.each do |lang, translation| %>
                 <td>
-                    <% if word_def.has_key?(lang.shorthand) %>
-                        <% if @searched %>
-                            <%= highlight(word_def[lang.shorthand].loc, @searched) %>
-                        <% else %>
-                            <%= word_def[lang.shorthand].loc %>
-                        <% end %>
+                    <% if @searched %>
+                        <%= highlight(translation.loc, @searched) %>
+                    <% else %>
+                        <%= translation.loc %>
                     <% end %>
+                </td>
+            <% end %>
+            <% if columns[:tags] %>
+                <td>
+                    <%= word_def.tags %>
                 </td>
             <% end %>
         </tr>   

@@ -11,19 +11,7 @@ class WordTagsController < ApplicationController
     # this shows only words linked with the tag itself -- keep bc could be an option later
     # @defs = WordDefinition.joins("INNER JOIN word_definition_tags ON word_definition_tags.word_definition_id = word_definitions.id").where("word_definition_tags.word_tag_id = ?", params[:word_tag_id])
     # this shows the words linked with the tag and any of its children
-    @defs = WordDefinition.joins("INNER JOIN word_definition_tags ON word_definition_tags.word_definition_id = word_definitions.id").where(word_definition_tags: {word_tag_id: @word_tag.ids_with_children})
-
-    
-    # for each active language
-    @words = []
-    @defs.each do |word_def|
-      translations = {}
-      Language.active.each do |lang|
-        # fetch the translation of the matched word
-        translations[lang.shorthand] = Word.where(word_definition_id: word_def.id).where(language: lang).first
-      end
-      @words << translations
-    end    
+    @defs = WordDefinition.joins("INNER JOIN word_definition_tags ON word_definition_tags.word_definition_id = word_definitions.id").where(word_definition_tags: {word_tag_id: @word_tag.ids_with_children}) 
   end
 
   def list

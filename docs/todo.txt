@@ -1,0 +1,7 @@
+TODO:
+x Column-customizable word lists
+*Links to words within lists
+*Exercises
+*Local words
+*Options UI
+*Options => active language
