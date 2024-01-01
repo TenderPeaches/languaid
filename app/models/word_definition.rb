@@ -37,4 +37,17 @@ class WordDefinition < ApplicationRecord
         end
         return tags
     end
+
+    def loc(language)
+        unless language.is_a? Language
+            throw "word_definition.loc called with a non-Language parameter"
+        end
+
+        words.each do |word|
+            if word.language == language
+                return word.loc
+            end
+        end
+        return nil
+    end
 end

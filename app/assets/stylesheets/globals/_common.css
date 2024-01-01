@@ -73,10 +73,13 @@
 
 /* on a menu button click */
 .menu a:active,
-.action-bar a:active,
-.clickable-row:active {
+.action-bar a:active {
     border-style: var(--button-border-style-pressed);   /* appear as pressed button */
     background: var(--color-accent-darker);             /* use different color for additional highlight */
+}
+
+.clickable-row:active {
+    background: var(--color-accent-darker);             /* use different color for additional highlight, no border in tables */
 }
 
 

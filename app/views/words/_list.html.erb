@@ -1,7 +1,9 @@
 <%# args[columns] => optional columns to be displayed alongside the word translations %>
+<%# args[clickable] => if rows can be clicked to go to the word definition%>
 <% columns ||= {} %>
-<table class="<%= html_class %>">
-    <tr>
+<% clickable ||= false %>
+<%= content_tag :table, class: html_class, data: { controller: 'clickable-lists' } do %>
+    <%= content_tag :tr do %>
         <% Language.active.each do |lang| %>
             <th>
                 <%= lang.name %>
@@ -12,9 +14,10 @@
                 Tags
             </th>
         <% end %>
-    </tr>
+    <% end %>
     <% word_defs.each do |word_def| %>
-        <tr>
+        <%# if args[clickable], row click redirects to the word_definition page %>
+        <%= content_tag :tr, class: clickable ? "clickable-row" : "", data: clickable ? { url: words_path(word_def.id.to_s) } : {} do %>
             <% word_def.active_translations.each do |lang, translation| %>
                 <td>
                     <% if @searched %>
@@ -29,6 +32,6 @@
                     <%= word_def.tags %>
                 </td>
             <% end %>
-        </tr>   
+        <% end %>   
     <% end %>
-</table>
+<% end %>

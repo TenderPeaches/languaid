@@ -9,4 +9,4 @@
         <%= @word_tag.word_count %>
     <% end %>
 <% end %>
-<%= render partial: "words/list", locals: { html_class: 'words', word_defs: @defs, columns: { tags: true } } %>
+<%= render partial: "words/list", locals: { html_class: 'words', word_defs: @defs, columns: { tags: true }, clickable: true } %>

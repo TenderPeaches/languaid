@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   get "/words/search", to: "words#search", as: :search_word       # search for words
   get "/tags", to: "word_tags#list", as: :list_tags               # mass-assign tags to words
   
-  resources :verb_conjugations, :word_usages, :word_tags, :adjectives, :expressions, :conjunctions, :prepositions, :pronouns, :adverbs, :verbs, :nouns, :articles, :words, :rules, :regions, :languages 
+  get 'words/:id', to: "word_definitions#show", as: :words        # redirect words/:id to word definition controller bc definitions almost always have multiple words (one+ per language), so it's much more likely the user means to see all the translations at once, rather than individual words in each language. This isn't a dictionary yet!
+  resources :verb_conjugations, :word_usages, :word_tags, :adjectives, :expressions, :conjunctions, :prepositions, :pronouns, :adverbs, :verbs, :nouns, :articles, :rules, :regions, :languages 
 end

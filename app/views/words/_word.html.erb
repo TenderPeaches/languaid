@@ -1,12 +1,13 @@
-<%= content_div, class: "card card--word", id: dom_id word do %>
-  <%= content_div, class: "card-title" %>
-    <%= word.wordable_type %> - <%= word.word_definition.definition %>
+<%= content_tag :div, class: "card card--word" do %>
+  <%= content_tag :div, class: "card-title" do %>
+    <%= word_definition.wordable_type %> - <%= word_definition.definition == "" ? word_definition.id : word_definition.defintion %>
   <% end %>
-
-  <%= content_div, class: "card-list" %>
+  <br/>
+  <%= content_tag :div, class: "card-list" do %>
     <% Language.active.each do |lang| %>
-      <%=  %>
+      <%= content_tag :div do %>
+        <%= lang.name %> - <%= word_definition.loc(lang) %>
+      <% end %>
     <% end %>
   <% end %>
-
 <% end %>

@@ -1,3 +1,4 @@
+# words routes to this controller because there's always mutiple "words" in various language for most given definitions
 class WordDefinitionsController < ApplicationController
   before_action :set_word_definition, only: %i[ show edit update destroy ]
 
@@ -8,6 +9,9 @@ class WordDefinitionsController < ApplicationController
 
   # GET /word_definitions/1 or /word_definitions/1.json
   def show
+    respond_to do |format|
+      format.html { render 'words/show' }
+    end
   end
 
   # GET /word_definitions/new
