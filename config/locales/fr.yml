@@ -1,0 +1,8 @@
+fr:
+  app_title: "Languaide"
+  keywords: 
+    correct: "Correct"
+    incorrect: "Incorrect"
+  exercises: 
+    name: "Exercices"
+    remember_translation: "Deviner le mot"

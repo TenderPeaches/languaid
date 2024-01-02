@@ -1,7 +1,11 @@
 TODO:
 x Column-customizable word lists
 x Links to words within lists
-*Exercises
-*Local words
+x Header
+x Exercises
 *Options UI
 *Options => active language
+*i18n
+*users
+*Local words
+*exercice stats

@@ -2,13 +2,10 @@ class Language < ApplicationRecord
     has_many :rules
     has_many :words
 
-    def self.active
-        Language.where(active: true)
-    end
-
-    def self.with_gendered_nouns
-        Language.active.where(has_gendered_nouns: true)
-    end
+    scope :active, -> { where(active: true)}
+    scope :with_gendered_nouns, -> { where(has_gendered_nouns: true)}
+    scope :known, -> { where(id: [1, 2])}
+    scope :practicing, -> { where(id: 3)}
 
     def noun_genders
         #! ideally, should be added as model to database; for a working prototype however, just hard code

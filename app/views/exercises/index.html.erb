@@ -1,0 +1,5 @@
+<%= content_tag :h2, t("exercises.name") %>
+<%= content_tag :div, class: "menu" do %>
+    <%= link_to t('exercises.remember_translation'), exercises_remember_translation_path, data: { turbo_stream: true } %>
+<% end %>
+<%= turbo_frame_tag "exercise-frame" %>

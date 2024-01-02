@@ -5,6 +5,11 @@
     display: none !important;   /*! maybe only acceptable use of !important, but should still look to see if really necessary */
 }
 
+/* main part of the page */
+.content {
+    padding-top: 1rem;                      /* spacing below header bar */
+}
+
 /* class added to elements that need to clash with the surrounding content */
 .contrast-text {
     color: var(--color-accent-light);       /* clash with text (by not using secondary color) and background (by not using primary) */

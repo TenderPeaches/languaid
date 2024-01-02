@@ -2,11 +2,22 @@
 
 /* for all content */
 body {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
     background-color: var(--color-primary-black);           /* dark-bg */
     color: var(--color-primary-white);                      /* light-fg */ 
     margin: auto;                                           /* to center content */
-    padding-top: var(--size-xxl);                           /* breathing space */ 
     text-align: center;                                     /* because the app is meant to be minimalist, default everything to center for a single-column layout */
+    
+    width: calc(min(100vw, var(--max-content-width--screen)));
+}
+
+header {
+    justify-content: space-between;
+    align-content: center;
+    margin: 0 0 2rem 0;
+    padding: 0.5rem;
 }
 
 /* links */

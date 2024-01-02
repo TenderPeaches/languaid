@@ -1,0 +1,35 @@
+<%= form_tag exercises_remember_translation_path, id: "remember-translations" do %>
+    <%= turbo_frame_tag "remember-translations__results" do %>
+        <% if result %>
+            <%= t('keywords.correct') %>
+        <% elsif result.nil? %>
+            <%# do nothing if result nil, this happens when the user first runs the exercise %>
+        <% else %>
+            <%= t('keywords.incorrect') %>
+        <% end %>
+    <% end %>
+    <%= turbo_frame_tag "remember-translations__words" do %>
+        <%= content_tag :table do %>
+            <%= content_tag :tr do %>
+                <% known_words.each do |word| %>
+                    <%= content_tag :th, word.language.name %>
+                <% end %>
+                <%= content_tag :th, guessed_word.language.name %>
+            <% end %>
+            <%= content_tag :tr do %>
+                <% known_words.each do |word| %>
+                    <%= content_tag :td, class: "remember-translation__known-word" do %>
+                        <%= word.loc %>
+                    <% end %>
+                <% end %>
+                <%= content_tag :td do %>   
+                    <%= text_field_tag :guessed_word, "", class: "remember-translation__guessed-word" %>
+                <% end %>
+            <% end %>
+        <% end %>
+    <% end %>
+    <%= turbo_frame_tag "remember-translations__actions" do %>
+        <%= submit_tag %>
+    <% end %>
+    <%= hidden_field_tag :answer_word, guessed_word.loc.downcase %>
+<% end %>

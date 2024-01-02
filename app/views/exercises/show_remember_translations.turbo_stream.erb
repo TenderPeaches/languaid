@@ -1,0 +1,3 @@
+<%= turbo_stream.update "exercise-frame" do %>
+    <%= render partial: "exercises/remember_translations", locals: { known_words: @known_words, guessed_word: @guessed_word, guessed_language: @guessed_language, result: nil } %>
+<% end %>
