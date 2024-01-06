@@ -3,7 +3,7 @@ x Column-customizable word lists
 x Links to words within lists
 x Header
 x Exercises
-*Options UI
+x Options UI
 *Options => active language
 *i18n
 *users

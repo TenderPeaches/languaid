@@ -1,0 +1,4 @@
+<%= form_tag submit_settings_path, class: "settings", data: { turbo: false } do %>
+    <%= render partial: "settings/active_languages" %>
+    <%= submit_tag %>
+<% end %>

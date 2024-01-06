@@ -1,0 +1,4 @@
+<%= content_tag :fieldset, id: "active-languages" do %>
+    <%= content_tag :legend, t('settings.active_languages') %>
+    <%= select_tag :active_languages, options_from_collection_for_select(Language.all, :id, :name, selected: Language.active.map { |lang| lang.id.to_s }), multiple: true %>
+<% end %>

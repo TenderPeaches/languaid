@@ -6,3 +6,5 @@ fr:
   exercises: 
     name: "Exercices"
     remember_translation: "Deviner le mot"
+  settings:
+    active_languages: "Langues actives"

@@ -3,7 +3,7 @@ class Language < ApplicationRecord
     has_many :words
 
     scope :active, -> { where(active: true)}
-    scope :with_gendered_nouns, -> { where(has_gendered_nouns: true)}
+    scope :with_gendered_nouns, -> { where(has_gendered_nouns: true).where(active: true)}
     scope :known, -> { where(id: [1, 2])}
     scope :practicing, -> { where(id: 3)}
 
